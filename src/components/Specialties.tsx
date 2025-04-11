@@ -1,5 +1,5 @@
 
-import { CircleDollarSign, Building, Factory, Truck, PlaneTakeoff, Heart, Users } from 'lucide-react';
+import { CircleDollarSign, Building, Factory, Truck, PlaneTakeoff, Heart } from 'lucide-react';
 
 const Specialties = () => {
   const specialties = [
@@ -31,14 +31,7 @@ const Specialties = () => {
     {
       icon: <Heart className="h-10 w-10" />,
       title: "Healthcare",
-      color: "from-red-500 to-pink-500",
-      description: "Specialized medical stop-loss and indemnity solutions for healthcare providers and small employer groups."
-    },
-    {
-      icon: <Users className="h-10 w-10" />,
-      title: "Small Employer Groups",
-      color: "from-indigo-500 to-purple-500",
-      description: "Tailored healthcare coverage solutions designed specifically for the unique needs of small employer groups."
+      color: "from-red-500 to-pink-500"
     }
   ];
 
@@ -48,7 +41,7 @@ const Specialties = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Industry Specialties</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our team brings deep expertise across diverse industries, with particular focus on innovative healthcare solutions for small employer groups.
+            Our team brings deep expertise across diverse industries, enabling us to provide tailored reinsurance solutions.
           </p>
         </div>
         
@@ -59,10 +52,7 @@ const Specialties = () => {
                 {specialty.icon}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-center mb-2">{specialty.title}</h3>
-                {specialty.description && (
-                  <p className="text-gray-600 text-center">{specialty.description}</p>
-                )}
+                <h3 className="text-xl font-semibold text-center">{specialty.title}</h3>
               </div>
             </div>
           ))}
