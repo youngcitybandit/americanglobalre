@@ -1,31 +1,12 @@
 
-import { ArrowUp } from 'lucide-react';
-
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
-
   return (
     <footer className="bg-agr-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div>
-            <button 
-              onClick={scrollToTop}
-              className="bg-white/10 hover:bg-white/20 text-white rounded-full p-3 transition-colors"
-              aria-label="Scroll to top"
-            >
-              <ArrowUp className="h-5 w-5" />
-            </button>
-          </div>
-          
-          <div>
-            <h3 className="font-semibold text-lg mb-6">Quick Links</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-lg mb-6 text-left">Quick Links</h3>
+            <ul className="space-y-3 text-left">
               <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
               <li><a href="#specialties" className="text-gray-400 hover:text-white transition-colors">Specialties</a></li>
               <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
@@ -34,8 +15,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-6">Legal</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-lg mb-6 text-left">Legal</h3>
+            <ul className="space-y-3 text-left">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
