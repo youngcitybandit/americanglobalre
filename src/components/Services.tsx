@@ -9,14 +9,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Services = () => {
   const services = [
     {
-      icon: <Briefcase className="h-12 w-12 text-agr-brightBlue" />,
-      title: "Business Solutions",
-      description: "Tailored reinsurance packages specifically designed for the unique needs and budgets of businesses and employer groups."
-    },
-    {
       icon: <HeartPulse className="h-12 w-12 text-agr-brightBlue" />,
       title: "Indemnity Insurance",
       description: "Flexible indemnity insurance plans providing financial protection for businesses against specific healthcare expenses and conditions."
+    },
+    {
+      icon: <Briefcase className="h-12 w-12 text-agr-brightBlue" />,
+      title: "Business Solutions",
+      description: "Tailored reinsurance packages specifically designed for the unique needs and budgets of businesses and employer groups."
     },
     {
       icon: <Users className="h-12 w-12 text-agr-brightBlue" />,
