@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
             <a href="#" className="inline-block mb-6">
-              <Logo />
+              <Logo className="brightness-200 invert" />
             </a>
             <p className="text-gray-400 mb-6">
               Reimagining reinsurance for the digital age with innovative solutions and exceptional service.

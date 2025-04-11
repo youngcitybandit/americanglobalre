@@ -8,10 +8,11 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ className = "" }) => {
   return (
     <div className={`flex items-center ${className}`}>
-      <span className="text-2xl font-bold">
-        <span className="text-agr-blue">AG</span>
-        <span className="text-agr-accent">Reinsurance</span>
-      </span>
+      <img 
+        src="/lovable-uploads/d1120e29-7e22-481e-a3a7-7ac147942961.png" 
+        alt="AGReinsurance Logo" 
+        className="h-8 md:h-10"
+      />
     </div>
   );
 };
