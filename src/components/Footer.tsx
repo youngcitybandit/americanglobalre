@@ -1,3 +1,4 @@
+
 import { ArrowUp } from 'lucide-react';
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-agr-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
             <a href="#" className="text-2xl font-bold inline-block mb-6">
               <span className="text-white">AG</span>
@@ -36,17 +37,6 @@ const Footer = () => {
               <li><a href="#specialties" className="text-gray-400 hover:text-white transition-colors">Specialties</a></li>
               <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-semibold text-lg mb-6">Services</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Property & Casualty</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Advanced Analytics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Global Solutions</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Catastrophe Protection</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Risk Management</a></li>
             </ul>
           </div>
           
