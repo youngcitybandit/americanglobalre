@@ -36,7 +36,7 @@ const Hero = () => {
               <div className="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-agr-brightBlue to-agr-accent rounded-full opacity-20 absolute top-4 left-4 blur-2xl"></div>
               <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 w-full max-w-md shadow-lg">
                 <div className="flex items-center justify-between mb-6">
-                  <div className="text-white font-bold text-xl">American Global</div>
+                  <div className="text-white font-bold text-xl">innovative solutions</div>
                   <div className="text-agr-accent font-medium">Premium Solutions</div>
                 </div>
                 <div className="space-y-6">
