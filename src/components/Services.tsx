@@ -16,22 +16,22 @@ const Services = () => {
     {
       icon: <Shield className="h-12 w-12 text-agr-brightBlue" />,
       title: "Risk Protection",
-      description: "Innovative reinsurance solutions designed for small businesses and self-funded employers to protect against catastrophic claims."
+      description: "Innovative reinsurance solutions designed for businesses and self-funded employers to protect against catastrophic claims."
     },
     {
       icon: <Hospital className="h-12 w-12 text-agr-brightBlue" />,
       title: "Healthcare Coverage",
-      description: "Comprehensive reinsurance for hospital in-patient services, emergency rooms, and specialized healthcare providers serving small businesses."
+      description: "Comprehensive reinsurance for hospital in-patient services, emergency rooms, and specialized healthcare providers serving businesses."
     },
     {
       icon: <Briefcase className="h-12 w-12 text-agr-brightBlue" />,
-      title: "Small Business Solutions",
-      description: "Tailored reinsurance packages specifically designed for the unique needs and budgets of small businesses and employer groups."
+      title: "Business Solutions",
+      description: "Tailored reinsurance packages specifically designed for the unique needs and budgets of businesses and employer groups."
     },
     {
       icon: <HeartPulse className="h-12 w-12 text-agr-brightBlue" />,
       title: "Indemnity Insurance",
-      description: "Flexible indemnity insurance plans providing financial protection for small businesses against specific healthcare expenses and conditions."
+      description: "Flexible indemnity insurance plans providing financial protection for businesses against specific healthcare expenses and conditions."
     },
     {
       icon: <Users className="h-12 w-12 text-agr-brightBlue" />,
@@ -41,7 +41,7 @@ const Services = () => {
     {
       icon: <PhoneCall className="h-12 w-12 text-agr-brightBlue" />,
       title: "Telehealth Solutions",
-      description: "Forward-thinking coverage for telehealth services, making essential care accessible and affordable for small business employees."
+      description: "Forward-thinking coverage for telehealth services, making essential care accessible and affordable for business employees."
     }
   ];
 
@@ -51,7 +51,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            AGRe delivers innovative indemnity insurance and specialized healthcare coverage solutions for small businesses in the evolving healthcare landscape.
+            AGRe delivers innovative indemnity insurance and specialized healthcare coverage solutions for businesses in the evolving healthcare landscape.
           </p>
         </div>
         

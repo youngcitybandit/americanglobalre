@@ -1,4 +1,3 @@
-
 import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance, Briefcase, Users } from 'lucide-react';
 
 const Specialties = () => {
@@ -20,7 +19,7 @@ const Specialties = () => {
     },
     {
       icon: <Briefcase className="h-10 w-10" />,
-      title: "Small Businesses",
+      title: "Businesses",
       color: "from-amber-500 to-orange-500"
     },
     {

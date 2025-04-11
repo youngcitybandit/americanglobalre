@@ -36,7 +36,7 @@ const Hero = () => {
               <div className="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-agr-brightBlue to-agr-accent rounded-full opacity-20 absolute top-4 left-4 blur-2xl"></div>
               <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 w-full max-w-md shadow-lg">
                 <div className="flex items-center justify-between mb-6">
-                  <div className="text-white font-bold">Small Business Coverage</div>
+                  <div className="text-white font-bold">Business Coverage</div>
                   <div className="text-agr-accent">Comprehensive</div>
                 </div>
                 <div className="space-y-4">
@@ -47,7 +47,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="bg-white/5 rounded-lg p-4">
-                    <div className="text-sm text-gray-400 mb-1">Small Business Protection</div>
+                    <div className="text-sm text-gray-400 mb-1">Business Protection</div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '90%' }}></div>
                     </div>
