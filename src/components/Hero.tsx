@@ -49,8 +49,8 @@ const Hero = () => {
                     <p className="text-gray-300 text-sm">Proactive strategies to identify and address potential vulnerabilities before they impact your business.</p>
                   </div>
                   <div className="bg-white/5 rounded-lg p-5">
-                    <div className="text-white font-medium mb-2">Digital Innovation</div>
-                    <p className="text-gray-300 text-sm">Leveraging technology to streamline benefits administration and improve employee experience.</p>
+                    <div className="text-white font-medium mb-2">Cash Benefits to Employees</div>
+                    <p className="text-gray-300 text-sm">Immediate cash payments to employees for qualified events.</p>
                   </div>
                 </div>
               </div>
