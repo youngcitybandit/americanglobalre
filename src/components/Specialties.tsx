@@ -1,5 +1,5 @@
 
-import { Heart, Building, CircleDollarSign, Stethoscope, Briefcase, Ambulance, Syringe, Leaf } from 'lucide-react';
+import { Heart, Building, CircleDollarSign, Stethoscope, Scissors, Ambulance, Syringe, Leaf } from 'lucide-react';
 
 const Specialties = () => {
   const specialties = [
@@ -19,7 +19,7 @@ const Specialties = () => {
       color: "from-green-500 to-teal-500"
     },
     {
-      icon: <Briefcase className="h-10 w-10" />,
+      icon: <Scissors className="h-10 w-10" />,
       title: "Surgical",
       color: "from-amber-500 to-orange-500"
     },
