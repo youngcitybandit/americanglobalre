@@ -14,7 +14,7 @@ const Specialties = () => {
       color: "from-blue-500 to-purple-500"
     },
     {
-      icon: <CircleDollarSign className="h-10 w-10" />,
+      icon: <Ambulance className="h-10 w-10" />,
       title: "Ambulance",
       color: "from-green-500 to-teal-500"
     },
