@@ -1,5 +1,5 @@
 
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Shield } from 'lucide-react';
 
 const About = () => {
   const strengths = [
@@ -19,6 +19,18 @@ const About = () => {
             <p className="text-lg text-gray-600 mb-8">
               Founded on the principles of innovation, expertise, and exceptional service, AGRe specializes in healthcare reinsurance including indemnity insurance and coverage for disease management plans. We combine deep healthcare industry knowledge with cutting-edge technology to deliver solutions that address today's medical challenges and tomorrow's healthcare opportunities.
             </p>
+            
+            <div className="bg-agr-lightBlue/10 border-l-4 border-agr-brightBlue p-6 rounded-r-lg mb-8">
+              <div className="flex items-start">
+                <Shield className="h-8 w-8 text-agr-brightBlue mt-1 flex-shrink-0" />
+                <div className="ml-4">
+                  <h3 className="text-xl font-semibold text-agr-dark mb-2">Regulatory Compliance & Customization</h3>
+                  <p className="text-gray-700">
+                    AGRe emphasizes customized policies that adhere to applicable statutes and regulations, meaning coverage is structured in compliance with insurance laws and tailored to the needs of each client group. Our legal and compliance teams work closely with policy designers to ensure all solutions meet or exceed regulatory requirements while delivering maximum value.
+                  </p>
+                </div>
+              </div>
+            </div>
             
             <div className="space-y-4 mb-8">
               {strengths.map((strength, index) => (
