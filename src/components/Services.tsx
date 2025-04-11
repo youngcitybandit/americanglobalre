@@ -1,11 +1,6 @@
 
 import { 
-  Shield, 
-  Hospital, 
-  Ambulance, 
   HeartPulse, 
-  Building2, 
-  PhoneCall,
   Briefcase,
   Users
 } from 'lucide-react';
@@ -13,16 +8,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const Services = () => {
   const services = [
-    {
-      icon: <Shield className="h-12 w-12 text-agr-brightBlue" />,
-      title: "Risk Protection",
-      description: "Innovative reinsurance solutions designed for businesses and self-funded employers to protect against catastrophic claims."
-    },
-    {
-      icon: <Hospital className="h-12 w-12 text-agr-brightBlue" />,
-      title: "Healthcare Coverage",
-      description: "Comprehensive reinsurance for hospital in-patient services, emergency rooms, and specialized healthcare providers serving businesses."
-    },
     {
       icon: <Briefcase className="h-12 w-12 text-agr-brightBlue" />,
       title: "Business Solutions",
@@ -37,11 +22,6 @@ const Services = () => {
       icon: <Users className="h-12 w-12 text-agr-brightBlue" />,
       title: "Small Employer Groups",
       description: "Specialized coverage solutions for small employer groups, balancing comprehensive protection with affordable premiums."
-    },
-    {
-      icon: <PhoneCall className="h-12 w-12 text-agr-brightBlue" />,
-      title: "Telehealth Solutions",
-      description: "Forward-thinking coverage for telehealth services, making essential care accessible and affordable for business employees."
     }
   ];
 
