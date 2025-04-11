@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 
 interface LogoProps {
   className?: string;
+  isScrolled?: boolean;
 }
 
-const Logo: React.FC<LogoProps> = ({ className = "" }) => {
+const Logo: React.FC<LogoProps> = ({ className = "", isScrolled = false }) => {
   const [isGlowing, setIsGlowing] = useState(false);
   
   useEffect(() => {
@@ -22,12 +23,14 @@ const Logo: React.FC<LogoProps> = ({ className = "" }) => {
 
   return (
     <div className={`flex items-center ${className} relative group`}>
-      {/* Glow effect */}
-      <div 
-        className={`absolute -inset-1 rounded-lg bg-gradient-to-r from-agr-accent via-agr-brightBlue to-agr-accent opacity-70 blur-lg transition-opacity duration-1000 ${
-          isGlowing ? 'opacity-70' : 'opacity-30'
-        } group-hover:opacity-80`}
-      ></div>
+      {/* Glow effect - only show when not scrolled */}
+      {!isScrolled && (
+        <div 
+          className={`absolute -inset-1 rounded-lg bg-gradient-to-r from-agr-accent via-agr-brightBlue to-agr-accent opacity-70 blur-lg transition-opacity duration-1000 ${
+            isGlowing ? 'opacity-70' : 'opacity-30'
+          } group-hover:opacity-80`}
+        ></div>
+      )}
       
       <div className="relative">
         <img 
