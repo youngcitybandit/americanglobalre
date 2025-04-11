@@ -41,7 +41,7 @@ const Hero = () => {
                 </div>
                 <div className="space-y-4">
                   <div className="bg-white/5 rounded-lg p-4">
-                    <div className="text-sm text-gray-400 mb-1">Medical Stop-Loss</div>
+                    <div className="text-sm text-gray-400 mb-1">Risk Protection</div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '95%' }}></div>
                     </div>

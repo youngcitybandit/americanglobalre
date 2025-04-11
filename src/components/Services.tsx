@@ -15,8 +15,8 @@ const Services = () => {
   const services = [
     {
       icon: <Shield className="h-12 w-12 text-agr-brightBlue" />,
-      title: "Medical Stop-Loss",
-      description: "Innovative stop-loss reinsurance solutions designed for small businesses and self-funded employers to protect against catastrophic claims."
+      title: "Risk Protection",
+      description: "Innovative reinsurance solutions designed for small businesses and self-funded employers to protect against catastrophic claims."
     },
     {
       icon: <Hospital className="h-12 w-12 text-agr-brightBlue" />,
@@ -51,7 +51,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            AGRe delivers innovative medical stop-loss, indemnity insurance, and specialized healthcare coverage solutions for small businesses in the evolving healthcare landscape.
+            AGRe delivers innovative indemnity insurance and specialized healthcare coverage solutions for small businesses in the evolving healthcare landscape.
           </p>
         </div>
         
