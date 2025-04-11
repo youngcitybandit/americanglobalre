@@ -69,11 +69,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className={`md:w-1/2 mb-12 md:mb-0 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="max-w-2xl">
-              {/* Badge */}
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm mb-5 border border-agr-accent/30 animate-pulse">
-                <Sparkles className="w-4 h-4 mr-2 text-agr-accent" />
-                <span className="text-xs font-medium text-white">Revolutionary Insurance Solutions</span>
-              </div>
+              {/* Badge removed */}
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 <span className="animate-pulse inline-block text-white">Managing </span>
