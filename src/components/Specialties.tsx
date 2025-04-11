@@ -1,4 +1,3 @@
-
 import { Heart, Building, CircleDollarSign, Stethoscope, Scissors, Ambulance, Syringe, Leaf } from 'lucide-react';
 
 const Specialties = () => {
@@ -40,9 +39,6 @@ const Specialties = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Benefit Solutions for Your Workforce</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            Enhance your employee benefits program with American Global's tailored supplemental coverage.
-          </p>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto mt-4">
             Enhance your existing benefits program with American Global's employee cash benefits coverage.
           </p>
