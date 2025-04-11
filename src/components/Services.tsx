@@ -5,8 +5,7 @@ import {
   Ambulance, 
   HeartPulse, 
   Building2, 
-  PhoneCall,
-  FileText 
+  PhoneCall 
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -41,11 +40,6 @@ const Services = () => {
       icon: <PhoneCall className="h-12 w-12 text-agr-brightBlue" />,
       title: "Telehealth Solutions",
       description: "Forward-thinking coverage for mental and behavioral telehealth services, expanding access to essential care."
-    },
-    {
-      icon: <FileText className="h-12 w-12 text-agr-brightBlue" />,
-      title: "Customized Policies",
-      description: "Tailored policies underwritten according to applicable Statutes and Regulations, ensuring qualified policyholders receive compliant, custom coverage."
     }
   ];
 
@@ -55,7 +49,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            AGRe delivers innovative healthcare reinsurance solutions including medical stop-loss, indemnity insurance, and specialized coverage for the evolving healthcare landscape. All our policies are customized for qualified policyholders and underwritten in compliance with applicable regulations.
+            AGRe delivers innovative healthcare reinsurance solutions including medical stop-loss, indemnity insurance, and specialized coverage for the evolving healthcare landscape.
           </p>
         </div>
         
