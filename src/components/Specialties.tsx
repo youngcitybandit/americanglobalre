@@ -1,5 +1,5 @@
 
-import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance } from 'lucide-react';
+import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance, Briefcase, Users } from 'lucide-react';
 
 const Specialties = () => {
   const specialties = [
@@ -19,14 +19,14 @@ const Specialties = () => {
       color: "from-green-500 to-teal-500"
     },
     {
-      icon: <Stethoscope className="h-10 w-10" />,
-      title: "Medical Groups",
-      color: "from-blue-400 to-cyan-400"
+      icon: <Briefcase className="h-10 w-10" />,
+      title: "Small Businesses",
+      color: "from-amber-500 to-orange-500"
     },
     {
-      icon: <UserCog className="h-10 w-10" />,
-      title: "Telehealth Providers",
-      color: "from-purple-500 to-pink-500"
+      icon: <Users className="h-10 w-10" />,
+      title: "Small Employer Groups",
+      color: "from-indigo-500 to-violet-500"
     },
     {
       icon: <Ambulance className="h-10 w-10" />,
@@ -41,7 +41,7 @@ const Specialties = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Industry Specialties</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our team brings deep expertise across the healthcare ecosystem, delivering tailored reinsurance solutions for today's evolving medical landscape.
+            Our team brings deep expertise across the healthcare ecosystem, delivering tailored reinsurance solutions for small businesses and today's evolving medical landscape.
           </p>
         </div>
         

@@ -19,7 +19,7 @@ const Hero = () => {
                 Reimagining <span className="gradient-text">Healthcare Reinsurance</span> for the Digital Age
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8">
-                American Global Reinsurance delivers innovative medical stop-loss, indemnity insurance, and specialized healthcare coverage solutions. We're not just adapting to the future — we're creating it.
+                American Global Reinsurance delivers innovative medical stop-loss, indemnity insurance, and specialized healthcare coverage solutions for small businesses. We're not just adapting to the future — we're creating it.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="btn-gradient">
@@ -36,7 +36,7 @@ const Hero = () => {
               <div className="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-agr-brightBlue to-agr-accent rounded-full opacity-20 absolute top-4 left-4 blur-2xl"></div>
               <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 w-full max-w-md">
                 <div className="flex items-center justify-between mb-6">
-                  <div className="text-white font-bold">Healthcare Coverage</div>
+                  <div className="text-white font-bold">Small Business Coverage</div>
                   <div className="text-agr-accent">Comprehensive</div>
                 </div>
                 <div className="space-y-4">
@@ -47,7 +47,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="bg-white/5 rounded-lg p-4">
-                    <div className="text-sm text-gray-400 mb-1">Hospital Coverage</div>
+                    <div className="text-sm text-gray-400 mb-1">Small Business Protection</div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '90%' }}></div>
                     </div>

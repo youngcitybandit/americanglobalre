@@ -5,7 +5,9 @@ import {
   Ambulance, 
   HeartPulse, 
   Building2, 
-  PhoneCall 
+  PhoneCall,
+  Briefcase,
+  Users
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -14,32 +16,32 @@ const Services = () => {
     {
       icon: <Shield className="h-12 w-12 text-agr-brightBlue" />,
       title: "Medical Stop-Loss",
-      description: "Innovative stop-loss reinsurance solutions designed to protect self-funded employers and health plans from catastrophic claims."
+      description: "Innovative stop-loss reinsurance solutions designed for small businesses and self-funded employers to protect against catastrophic claims."
     },
     {
       icon: <Hospital className="h-12 w-12 text-agr-brightBlue" />,
       title: "Healthcare Coverage",
-      description: "Comprehensive reinsurance for hospital in-patient services, emergency rooms, and specialized healthcare providers."
+      description: "Comprehensive reinsurance for hospital in-patient services, emergency rooms, and specialized healthcare providers serving small businesses."
     },
     {
-      icon: <Ambulance className="h-12 w-12 text-agr-brightBlue" />,
-      title: "Ambulance Coverage",
-      description: "Specialized reinsurance solutions for ambulance services, ensuring continued operation during high-claim periods."
+      icon: <Briefcase className="h-12 w-12 text-agr-brightBlue" />,
+      title: "Small Business Solutions",
+      description: "Tailored reinsurance packages specifically designed for the unique needs and budgets of small businesses and employer groups."
     },
     {
       icon: <HeartPulse className="h-12 w-12 text-agr-brightBlue" />,
       title: "Indemnity Insurance",
-      description: "Flexible indemnity insurance plans providing financial protection against specific healthcare expenses and conditions."
+      description: "Flexible indemnity insurance plans providing financial protection for small businesses against specific healthcare expenses and conditions."
     },
     {
-      icon: <Building2 className="h-12 w-12 text-agr-brightBlue" />,
-      title: "Disease Management",
-      description: "Innovative reinsurance for disease management programs, supporting prevention and treatment initiatives."
+      icon: <Users className="h-12 w-12 text-agr-brightBlue" />,
+      title: "Small Employer Groups",
+      description: "Specialized coverage solutions for small employer groups, balancing comprehensive protection with affordable premiums."
     },
     {
       icon: <PhoneCall className="h-12 w-12 text-agr-brightBlue" />,
       title: "Telehealth Solutions",
-      description: "Forward-thinking coverage for mental and behavioral telehealth services, expanding access to essential care."
+      description: "Forward-thinking coverage for telehealth services, making essential care accessible and affordable for small business employees."
     }
   ];
 
@@ -49,7 +51,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            AGRe delivers innovative healthcare reinsurance solutions including medical stop-loss, indemnity insurance, and specialized coverage for the evolving healthcare landscape.
+            AGRe delivers innovative medical stop-loss, indemnity insurance, and specialized healthcare coverage solutions for small businesses in the evolving healthcare landscape.
           </p>
         </div>
         
