@@ -33,7 +33,7 @@ const Specialties = () => {
     <section id="specialties" className="section-padding bg-agr-dark">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Benefit Solutions for Your Workforce</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Cash Benefit Solutions for Your Workforce</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto mt-4">
             Enhance your existing benefits program with American Global's employee cash benefits coverage.
           </p>
@@ -42,7 +42,7 @@ const Specialties = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {specialties.map((specialty, index) => (
             <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-              <div className="p-6 bg-agr-brightBlue flex justify-center">
+              <div className="p-6 bg-gradient-to-r from-agr-blue to-agr-brightBlue flex justify-center">
                 <div className="text-white">
                   {specialty.icon}
                 </div>
