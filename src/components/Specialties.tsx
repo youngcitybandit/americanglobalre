@@ -41,7 +41,7 @@ const Specialties = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Benefit Solutions for Your Workforce</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our team brings deep expertise across the healthcare ecosystem, delivering tailored reinsurance solutions for businesses and today's evolving medical landscape.
+            Enhance your benefits package with American Global insurance plans.
           </p>
         </div>
         
