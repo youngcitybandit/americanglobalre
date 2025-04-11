@@ -1,3 +1,4 @@
+
 import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance, Briefcase, Users } from 'lucide-react';
 
 const Specialties = () => {
@@ -14,7 +15,7 @@ const Specialties = () => {
     },
     {
       icon: <CircleDollarSign className="h-10 w-10" />,
-      title: "Self-Funded Employers",
+      title: "Ambulance",
       color: "from-green-500 to-teal-500"
     },
     {
