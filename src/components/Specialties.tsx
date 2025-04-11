@@ -41,7 +41,7 @@ const Specialties = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Benefit Solutions for Your Workforce</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Enhance your benefits package with American Global insurance plans.
+            Enhance your employee benefits program with American Global's tailored supplemental coverage.
           </p>
         </div>
         
