@@ -47,17 +47,13 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
-
-  .gradient-text {
-    @apply bg-gradient-to-r from-agr-brightBlue to-agr-accent bg-clip-text text-transparent;
-  }
   
-  .btn-gradient {
-    @apply bg-gradient-to-r from-agr-brightBlue to-agr-accent text-white hover:shadow-lg transition-all duration-300;
+  .btn-solid {
+    @apply bg-agr-blue text-white hover:shadow-md transition-all duration-300;
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
   
   .section-padding {

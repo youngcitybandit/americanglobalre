@@ -52,13 +52,13 @@ const Contact = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-agr-lightBlue rounded-2xl p-8 md:p-10">
+          <div className="bg-gray-100 rounded-2xl p-8 md:p-10">
             <h3 className="text-2xl font-bold mb-6 text-agr-blue">Contact Information</h3>
             
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="bg-white rounded-full p-3 mr-4">
-                  <MapPin className="h-6 w-6 text-agr-brightBlue" />
+                  <MapPin className="h-6 w-6 text-agr-blue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-agr-blue mb-1">Our Location</h4>
@@ -71,7 +71,7 @@ const Contact = () => {
               
               <div className="flex items-start">
                 <div className="bg-white rounded-full p-3 mr-4">
-                  <Mail className="h-6 w-6 text-agr-brightBlue" />
+                  <Mail className="h-6 w-6 text-agr-blue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-agr-blue mb-1">Email Us</h4>
@@ -83,7 +83,7 @@ const Contact = () => {
               
               <div className="flex items-start">
                 <div className="bg-white rounded-full p-3 mr-4">
-                  <Phone className="h-6 w-6 text-agr-brightBlue" />
+                  <Phone className="h-6 w-6 text-agr-blue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-agr-blue mb-1">Call Us</h4>
@@ -151,7 +151,7 @@ const Contact = () => {
                 />
               </div>
               
-              <Button type="submit" className="w-full bg-agr-brightBlue hover:bg-agr-blue" disabled={isSubmitting}>
+              <Button type="submit" className="w-full bg-agr-blue hover:bg-agr-blue/90" disabled={isSubmitting}>
                 {isSubmitting ? 'Sending...' : 'Send Message'} 
                 {!isSubmitting && <Send className="ml-2 h-4 w-4" />}
               </Button>

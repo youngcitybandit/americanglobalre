@@ -1,3 +1,4 @@
+
 import { Heart, Building, CircleDollarSign, Stethoscope, Scissors, Ambulance, Syringe, Leaf } from 'lucide-react';
 
 const Specialties = () => {
@@ -5,32 +6,26 @@ const Specialties = () => {
     {
       icon: <Heart className="h-10 w-10" />,
       title: "Hospital",
-      color: "from-agr-brightBlue to-agr-accent"
     },
     {
       icon: <Building className="h-10 w-10" />,
       title: "Emergency Room",
-      color: "from-agr-brightBlue to-agr-accent"
     },
     {
       icon: <Ambulance className="h-10 w-10" />,
       title: "Ambulance",
-      color: "from-agr-brightBlue to-agr-accent"
     },
     {
       icon: <Scissors className="h-10 w-10" />,
       title: "Surgical",
-      color: "from-agr-brightBlue to-agr-accent"
     },
     {
       icon: <Syringe className="h-10 w-10" />,
       title: "Anesthesia",
-      color: "from-agr-brightBlue to-agr-accent"
     },
     {
       icon: <Leaf className="h-10 w-10" />,
       title: "Wellness",
-      color: "from-agr-brightBlue to-agr-accent"
     }
   ];
 
@@ -46,8 +41,8 @@ const Specialties = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {specialties.map((specialty, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl shadow-md overflow-hidden card-hover">
-              <div className={`p-6 bg-gradient-to-r ${specialty.color} flex justify-center`}>
+            <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div className="p-6 bg-agr-brightBlue flex justify-center">
                 <div className="text-white">
                   {specialty.icon}
                 </div>
