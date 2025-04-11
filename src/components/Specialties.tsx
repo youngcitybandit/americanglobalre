@@ -1,4 +1,3 @@
-
 import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance, Briefcase, Users } from 'lucide-react';
 
 const Specialties = () => {
@@ -10,7 +9,7 @@ const Specialties = () => {
     },
     {
       icon: <Building className="h-10 w-10" />,
-      title: "Hospitals & Health Systems",
+      title: "Emergency Room",
       color: "from-blue-500 to-purple-500"
     },
     {
