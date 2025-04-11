@@ -11,7 +11,7 @@ const Services = () => {
     {
       icon: <HeartPulse className="h-12 w-12 text-agr-brightBlue" />,
       title: "Indemnity Insurance",
-      description: "Flexible indemnity insurance plans providing financial protection for businesses against specific healthcare expenses and conditions."
+      description: "Flexible indemnity insurance plans providing financial protection for businesses and their employees against specific healthcare expenses and conditions."
     },
     {
       icon: <Briefcase className="h-12 w-12 text-agr-brightBlue" />,
