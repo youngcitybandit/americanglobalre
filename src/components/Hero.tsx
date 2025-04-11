@@ -16,10 +16,10 @@ const Hero = () => {
           <div className="md:w-1/2 mb-12 md:mb-0">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Reimagining <span className="gradient-text">Healthcare Reinsurance</span> for the Digital Age
+                Reimagining <span className="gradient-text">Reinsurance</span> for the Digital Age
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8">
-                American Global Reinsurance delivers innovative medical stop-loss, indemnity insurance, and specialized healthcare coverage solutions. We're not just adapting to the future — we're creating it.
+                American Global Reinsurance brings innovative solutions to complex risks. We're not just adapting to the future — we're creating it.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="btn-gradient">
@@ -36,26 +36,26 @@ const Hero = () => {
               <div className="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-agr-brightBlue to-agr-accent rounded-full opacity-20 absolute top-4 left-4 blur-2xl"></div>
               <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 w-full max-w-md">
                 <div className="flex items-center justify-between mb-6">
-                  <div className="text-white font-bold">Healthcare Coverage</div>
-                  <div className="text-agr-accent">Comprehensive</div>
+                  <div className="text-white font-bold">Risk Assessment</div>
+                  <div className="text-agr-accent">98% Accuracy</div>
                 </div>
                 <div className="space-y-4">
                   <div className="bg-white/5 rounded-lg p-4">
-                    <div className="text-sm text-gray-400 mb-1">Medical Stop-Loss</div>
+                    <div className="text-sm text-gray-400 mb-1">Property Risk</div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '95%' }}></div>
+                      <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '75%' }}></div>
                     </div>
                   </div>
                   <div className="bg-white/5 rounded-lg p-4">
-                    <div className="text-sm text-gray-400 mb-1">Hospital Coverage</div>
+                    <div className="text-sm text-gray-400 mb-1">Liability Coverage</div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '90%' }}></div>
                     </div>
                   </div>
                   <div className="bg-white/5 rounded-lg p-4">
-                    <div className="text-sm text-gray-400 mb-1">Telehealth Services</div>
+                    <div className="text-sm text-gray-400 mb-1">Catastrophe Protection</div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '88%' }}></div>
+                      <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '80%' }}></div>
                     </div>
                   </div>
                 </div>
