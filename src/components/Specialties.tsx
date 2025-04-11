@@ -6,32 +6,32 @@ const Specialties = () => {
     {
       icon: <Heart className="h-10 w-10" />,
       title: "Hospital",
-      color: "from-red-500 to-pink-500"
+      color: "from-rose-200 to-rose-300"
     },
     {
       icon: <Building className="h-10 w-10" />,
       title: "Emergency Room",
-      color: "from-blue-500 to-purple-500"
+      color: "from-blue-200 to-blue-300"
     },
     {
       icon: <Ambulance className="h-10 w-10" />,
       title: "Ambulance",
-      color: "from-green-500 to-teal-500"
+      color: "from-emerald-200 to-emerald-300"
     },
     {
       icon: <Scissors className="h-10 w-10" />,
       title: "Surgical",
-      color: "from-amber-500 to-orange-500"
+      color: "from-amber-200 to-amber-300"
     },
     {
       icon: <Syringe className="h-10 w-10" />,
       title: "Anesthesia",
-      color: "from-indigo-500 to-violet-500"
+      color: "from-indigo-200 to-indigo-300"
     },
     {
       icon: <Leaf className="h-10 w-10" />,
       title: "Wellness",
-      color: "from-orange-500 to-red-500"
+      color: "from-orange-200 to-orange-300"
     }
   ];
 
@@ -48,7 +48,7 @@ const Specialties = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {specialties.map((specialty, index) => (
             <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden card-hover">
-              <div className={`p-6 bg-gradient-to-r ${specialty.color} text-white flex justify-center`}>
+              <div className={`p-6 bg-gradient-to-r ${specialty.color} text-gray-700 flex justify-center`}>
                 {specialty.icon}
               </div>
               <div className="p-6">
