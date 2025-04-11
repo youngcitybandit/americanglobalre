@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="md:w-1/2 mb-12 md:mb-0">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Managing <span className="gradient-text">Risk for Employer Benefits</span> for the Digital Age
+                Managing <span className="gradient-text">Risk for Employer Benefits</span> in the Digital Age
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8">
                 American Global Reinsurance delivers innovative medical stop-loss, indemnity insurance, and specialized healthcare coverage solutions for small businesses. We're not just adapting to the future — we're creating it.
