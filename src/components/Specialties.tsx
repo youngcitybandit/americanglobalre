@@ -20,7 +20,7 @@ const Specialties = () => {
     },
     {
       icon: <Briefcase className="h-10 w-10" />,
-      title: "Businesses",
+      title: "Surgical",
       color: "from-amber-500 to-orange-500"
     },
     {
