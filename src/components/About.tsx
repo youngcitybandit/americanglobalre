@@ -28,6 +28,13 @@ const About = () => {
               Founded on the principles of innovation, expertise, and exceptional service, AGRe specializes in healthcare reinsurance including medical stop-loss, indemnity insurance, and coverage for disease management plans. We combine deep healthcare industry knowledge with cutting-edge technology to deliver solutions that address today's medical challenges and tomorrow's healthcare opportunities.
             </p>
             
+            <div className="bg-agr-lightBlue rounded-lg p-6 mb-8">
+              <h3 className="text-xl font-semibold mb-3 text-agr-dark">Customized Policy Approach</h3>
+              <p className="text-gray-700">
+                AGRe policies are customized for its insured policyholders who are qualified and are underwritten according to the applicable Statutes and Regulations. This ensures compliance and tailored coverage that meets the unique needs of each healthcare organization we serve.
+              </p>
+            </div>
+            
             <div className="space-y-4 mb-8">
               {strengths.map((strength, index) => (
                 <div key={index} className="flex items-start">

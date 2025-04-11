@@ -1,5 +1,5 @@
 
-import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance } from 'lucide-react';
+import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance, FileCheck } from 'lucide-react';
 
 const Specialties = () => {
   const specialties = [
@@ -32,6 +32,11 @@ const Specialties = () => {
       icon: <Ambulance className="h-10 w-10" />,
       title: "Emergency Services",
       color: "from-orange-500 to-red-500"
+    },
+    {
+      icon: <FileCheck className="h-10 w-10" />,
+      title: "Qualified Policyholders",
+      color: "from-indigo-500 to-blue-500"
     }
   ];
 
@@ -41,11 +46,11 @@ const Specialties = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Industry Specialties</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our team brings deep expertise across the healthcare ecosystem, delivering tailored reinsurance solutions for today's evolving medical landscape.
+            Our team brings deep expertise across the healthcare ecosystem, delivering tailored reinsurance solutions for today's evolving medical landscape. Every policy is customized and underwritten according to applicable Statutes and Regulations.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {specialties.map((specialty, index) => (
             <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden card-hover">
               <div className={`p-6 bg-gradient-to-r ${specialty.color} text-white flex justify-center`}>
