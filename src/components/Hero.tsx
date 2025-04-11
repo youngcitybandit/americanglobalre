@@ -37,7 +37,6 @@ const Hero = () => {
               <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 w-full max-w-md shadow-lg">
                 <div className="flex items-center justify-between mb-6">
                   <div className="text-white font-bold text-xl">innovative solutions</div>
-                  <div className="text-agr-accent font-medium">Premium Solutions</div>
                 </div>
                 <div className="space-y-6">
                   <div className="bg-white/5 rounded-lg p-5">
