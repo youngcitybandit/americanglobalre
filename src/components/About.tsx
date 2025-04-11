@@ -10,12 +10,12 @@ const About = () => {
   ];
 
   const strengths = [
-    "Expert underwriting across all lines of business",
-    "Innovative risk assessment technologies",
-    "Commitment to long-term partnerships",
-    "Rapid claims resolution process",
-    "Global market insights and analytics",
-    "Multi-regional regulatory expertise"
+    "Specialized medical stop-loss reinsurance expertise",
+    "Comprehensive healthcare coverage solutions",
+    "Innovative telehealth reinsurance programs",
+    "Rapid claims resolution for healthcare providers",
+    "Advanced healthcare analytics and risk assessment",
+    "Ambulance and emergency services coverage"
   ];
 
   return (
@@ -25,7 +25,7 @@ const About = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">About American Global Reinsurance</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Founded on the principles of innovation, expertise, and exceptional service, American Global Reinsurance is redefining the reinsurance experience. We combine deep industry knowledge with cutting-edge technology to deliver solutions that address today's challenges and tomorrow's opportunities.
+              Founded on the principles of innovation, expertise, and exceptional service, AGRe specializes in healthcare reinsurance including medical stop-loss, indemnity insurance, and coverage for disease management plans. We combine deep healthcare industry knowledge with cutting-edge technology to deliver solutions that address today's medical challenges and tomorrow's healthcare opportunities.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -54,7 +54,7 @@ const About = () => {
               
               <div className="p-8 bg-agr-dark text-white">
                 <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
-                <p>To empower our clients with innovative reinsurance solutions that provide stability and enable growth in an ever-changing risk landscape.</p>
+                <p>To empower healthcare providers and payers with innovative reinsurance solutions that provide stability and enable growth in an ever-changing medical risk landscape.</p>
               </div>
             </div>
           </div>
