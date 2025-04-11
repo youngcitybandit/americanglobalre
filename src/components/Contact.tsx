@@ -63,8 +63,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-agr-blue mb-1">Our Location</h4>
                   <p className="text-gray-700">
-                    100 Wall Street, Suite 800<br />
-                    New York, NY 10005
+                    6060 North Central Expressway,<br />
+                    Suite 500, Dallas, TX 75206
                   </p>
                 </div>
               </div>
@@ -76,8 +76,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-agr-blue mb-1">Email Us</h4>
                   <p className="text-gray-700">
-                    info@agreinsurance.com<br />
-                    support@agreinsurance.com
+                    info@agreinsure.com
                   </p>
                 </div>
               </div>
@@ -89,8 +88,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-agr-blue mb-1">Call Us</h4>
                   <p className="text-gray-700">
-                    +1 (212) 555-7890<br />
-                    +1 (800) 123-4567
+                    1 877-828-9970
                   </p>
                 </div>
               </div>
