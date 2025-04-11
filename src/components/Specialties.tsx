@@ -1,37 +1,37 @@
 
-import { CircleDollarSign, Building, Factory, Truck, PlaneTakeoff, Heart } from 'lucide-react';
+import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance } from 'lucide-react';
 
 const Specialties = () => {
   const specialties = [
     {
+      icon: <Heart className="h-10 w-10" />,
+      title: "Healthcare Providers",
+      color: "from-red-500 to-pink-500"
+    },
+    {
       icon: <Building className="h-10 w-10" />,
-      title: "Commercial Real Estate",
+      title: "Hospitals & Health Systems",
       color: "from-blue-500 to-purple-500"
     },
     {
-      icon: <Factory className="h-10 w-10" />,
-      title: "Manufacturing",
-      color: "from-purple-500 to-pink-500"
-    },
-    {
       icon: <CircleDollarSign className="h-10 w-10" />,
-      title: "Financial Services",
+      title: "Self-Funded Employers",
       color: "from-green-500 to-teal-500"
     },
     {
-      icon: <Truck className="h-10 w-10" />,
-      title: "Transportation",
-      color: "from-orange-500 to-red-500"
-    },
-    {
-      icon: <PlaneTakeoff className="h-10 w-10" />,
-      title: "Aviation",
+      icon: <Stethoscope className="h-10 w-10" />,
+      title: "Medical Groups",
       color: "from-blue-400 to-cyan-400"
     },
     {
-      icon: <Heart className="h-10 w-10" />,
-      title: "Healthcare",
-      color: "from-red-500 to-pink-500"
+      icon: <UserCog className="h-10 w-10" />,
+      title: "Telehealth Providers",
+      color: "from-purple-500 to-pink-500"
+    },
+    {
+      icon: <Ambulance className="h-10 w-10" />,
+      title: "Emergency Services",
+      color: "from-orange-500 to-red-500"
     }
   ];
 
@@ -41,7 +41,7 @@ const Specialties = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Industry Specialties</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our team brings deep expertise across diverse industries, enabling us to provide tailored reinsurance solutions.
+            Our team brings deep expertise across the healthcare ecosystem, delivering tailored reinsurance solutions for today's evolving medical landscape.
           </p>
         </div>
         
