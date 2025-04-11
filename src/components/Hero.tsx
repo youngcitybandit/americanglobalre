@@ -16,13 +16,13 @@ const Hero = () => {
           <div className="md:w-1/2 mb-12 md:mb-0">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Managing <span className="gradient-text">Risk for Employer Benefits</span> in the Digital Age
+                Managing <span className="text-agr-accent">Risk for Employer Benefits</span> in the Digital Age
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8">
                 American Global delivers advanced, customized insurance solutions that go beyond traditional coverage — because health insurance wasn't built to cover it all. We don't just respond to change — we drive it.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="btn-gradient">
+                <Button asChild size="lg" className="bg-agr-accent text-agr-dark hover:bg-agr-accent/90">
                   <a href="#services">Explore Our Solutions <ArrowRight className="ml-2 h-5 w-5" /></a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white/10">
@@ -43,19 +43,19 @@ const Hero = () => {
                   <div className="bg-white/5 rounded-lg p-4">
                     <div className="text-sm text-gray-400 mb-1">Risk Protection</div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '95%' }}></div>
+                      <div className="bg-agr-accent h-2 rounded-full" style={{ width: '95%' }}></div>
                     </div>
                   </div>
                   <div className="bg-white/5 rounded-lg p-4">
                     <div className="text-sm text-gray-400 mb-1">Business Protection</div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '90%' }}></div>
+                      <div className="bg-agr-accent h-2 rounded-full" style={{ width: '90%' }}></div>
                     </div>
                   </div>
                   <div className="bg-white/5 rounded-lg p-4">
                     <div className="text-sm text-gray-400 mb-1">Telehealth Services</div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-agr-brightBlue to-agr-accent h-2 rounded-full" style={{ width: '88%' }}></div>
+                      <div className="bg-agr-accent h-2 rounded-full" style={{ width: '88%' }}></div>
                     </div>
                   </div>
                 </div>
