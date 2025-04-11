@@ -115,22 +115,13 @@ export default {
 						transform: 'translateX(0)',
 						opacity: '1' 
 					}
-				},
-				'gradient-x': {
-					'0%': {
-						'background-position': '0% 0%'
-					},
-					'100%': {
-						'background-position': '100% 0%'
-					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out forwards',
-				'slide-in': 'slide-in 0.5s ease-out forwards',
-				'gradient-x': 'gradient-x 3s ease-in-out forwards'
+				'slide-in': 'slide-in 0.5s ease-out forwards'
 			}
 		}
 	},

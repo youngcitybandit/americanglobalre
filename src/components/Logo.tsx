@@ -7,25 +7,18 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ className = "", isScrolled = false }) => {
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isGlowing, setIsGlowing] = useState(false);
   
   useEffect(() => {
-    // Start the animation immediately
-    setIsAnimating(true);
+    // Start the glow effect after component mounts
+    setIsGlowing(true);
     
-    // Create an animation interval that repeats
-    const animationInterval = setInterval(() => {
-      setIsAnimating(false);
-      
-      // Small delay before restarting the animation for a nice effect
-      setTimeout(() => {
-        setIsAnimating(true);
-      }, 500);
-    }, 4000); // Complete cycle every 4 seconds
+    // Create a pulsing glow effect
+    const glowInterval = setInterval(() => {
+      setIsGlowing(prev => !prev);
+    }, 2000);
     
-    return () => {
-      clearInterval(animationInterval);
-    };
+    return () => clearInterval(glowInterval);
   }, []);
 
   return (
@@ -33,36 +26,11 @@ const Logo: React.FC<LogoProps> = ({ className = "", isScrolled = false }) => {
       {/* Glow effect - only show when not scrolled */}
       {!isScrolled && (
         <div 
-          className={`absolute -inset-1 rounded-lg overflow-hidden transition-all duration-500 ${
-            isAnimating ? 'opacity-70' : 'opacity-30'
+          className={`absolute -inset-1 rounded-lg bg-gradient-to-r from-agr-accent via-agr-brightBlue to-agr-accent opacity-70 blur-lg transition-opacity duration-1000 ${
+            isGlowing ? 'opacity-70' : 'opacity-30'
           } group-hover:opacity-80`}
-        >
-          <div 
-            className={`w-full h-full bg-gradient-to-r from-agr-accent via-agr-brightBlue to-agr-accent bg-[length:200%_100%] ${
-              isAnimating ? 'animate-gradient-x' : ''
-            }`}
-            style={{
-              animation: isAnimating ? 'gradientFlow 3s ease-in-out forwards' : 'none'
-            }}
-          />
-        </div>
+        ></div>
       )}
-      
-      {/* Using regular style tag instead of style jsx */}
-      <style>
-        {`
-          @keyframes gradientFlow {
-            0% {
-              background-position: 0% 0%;
-              filter: blur(5px);
-            }
-            100% {
-              background-position: 100% 0%;
-              filter: blur(10px);
-            }
-          }
-        `}
-      </style>
       
       <div className="relative">
         <img 
