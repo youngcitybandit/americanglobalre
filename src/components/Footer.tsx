@@ -54,14 +54,9 @@ const Footer = () => {
         
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center mb-4 md:mb-0">
-              <a href="#" className="mr-4">
-                <Logo className="brightness-200 invert h-6 md:h-8" />
-              </a>
-              <p className="text-gray-400 text-sm">
-                © 2025 American Global Reinsurance Company, Inc. An Allied Insurance Company. All rights reserved.
-              </p>
-            </div>
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2025 American Global Reinsurance Company, Inc. An Allied Insurance Company. All rights reserved.
+            </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -6,12 +6,10 @@ import Specialties from "@/components/Specialties";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import FixedLogo from "@/components/FixedLogo";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <FixedLogo />
       <Navbar />
       <Hero />
       <Services />
