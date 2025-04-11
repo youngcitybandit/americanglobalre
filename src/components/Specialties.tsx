@@ -1,3 +1,4 @@
+
 import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance, Briefcase, Users } from 'lucide-react';
 
 const Specialties = () => {
@@ -38,9 +39,9 @@ const Specialties = () => {
     <section id="specialties" className="section-padding bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Industry Specialties</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Benefit Solutions for Your Workforce</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our team brings deep expertise across the healthcare ecosystem, delivering tailored reinsurance solutions for small businesses and today's evolving medical landscape.
+            Our team brings deep expertise across the healthcare ecosystem, delivering tailored reinsurance solutions for businesses and today's evolving medical landscape.
           </p>
         </div>
         
