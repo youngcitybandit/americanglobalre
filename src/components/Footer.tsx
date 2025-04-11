@@ -1,4 +1,3 @@
-
 import { ArrowUp } from 'lucide-react';
 
 const Footer = () => {
@@ -36,7 +35,6 @@ const Footer = () => {
               <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
               <li><a href="#specialties" className="text-gray-400 hover:text-white transition-colors">Specialties</a></li>
               <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#testimonials" className="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -42,7 +41,6 @@ const Navbar = () => {
             <a href="#services" className="text-gray-700 hover:text-agr-brightBlue transition-colors">Services</a>
             <a href="#specialties" className="text-gray-700 hover:text-agr-brightBlue transition-colors">Specialties</a>
             <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-colors">About</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-agr-brightBlue transition-colors">Testimonials</a>
             <Button asChild className="bg-agr-brightBlue hover:bg-agr-blue">
               <a href="#contact">Contact Us</a>
             </Button>
@@ -83,13 +81,6 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 About
-              </a>
-              <a 
-                href="#testimonials" 
-                className="text-gray-700 hover:text-agr-brightBlue transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Testimonials
               </a>
               <Button 
                 asChild 
