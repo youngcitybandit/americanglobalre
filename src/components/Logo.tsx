@@ -48,18 +48,21 @@ const Logo: React.FC<LogoProps> = ({ className = "", isScrolled = false }) => {
         </div>
       )}
       
-      <style jsx>{`
-        @keyframes gradientFlow {
-          0% {
-            background-position: 0% 0%;
-            filter: blur(5px);
+      {/* Using regular style tag instead of style jsx */}
+      <style>
+        {`
+          @keyframes gradientFlow {
+            0% {
+              background-position: 0% 0%;
+              filter: blur(5px);
+            }
+            100% {
+              background-position: 100% 0%;
+              filter: blur(10px);
+            }
           }
-          100% {
-            background-position: 100% 0%;
-            filter: blur(10px);
-          }
-        }
-      `}</style>
+        `}
+      </style>
       
       <div className="relative">
         <img 
