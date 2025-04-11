@@ -1,6 +1,8 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,8 +33,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#" className="text-2xl font-bold">
-              <span className="text-agr-blue">AG</span>
-              <span className="text-agr-accent">Reinsurance</span>
+              <Logo />
             </a>
           </div>
 
