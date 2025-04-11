@@ -89,7 +89,6 @@ const Hero = () => {
           <div className={`md:w-1/2 mb-12 md:mb-0 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                <span className="animate-pulse inline-block text-white">Managing </span>
                 <span className="inline-block bg-gradient-to-r from-agr-accent via-agr-brightBlue to-white bg-clip-text text-transparent">
                   <span className={`inline-block transition-opacity duration-700 ${animatedText === 0 ? 'opacity-100' : 'opacity-0 absolute'}`}>
                     {taglines[0]}
