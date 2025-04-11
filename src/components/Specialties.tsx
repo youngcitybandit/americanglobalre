@@ -1,5 +1,5 @@
 
-import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance, FileCheck } from 'lucide-react';
+import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance, FileCheck, Users, LineChart } from 'lucide-react';
 
 const Specialties = () => {
   const specialties = [
@@ -37,6 +37,16 @@ const Specialties = () => {
       icon: <FileCheck className="h-10 w-10" />,
       title: "Qualified Policyholders",
       color: "from-indigo-500 to-blue-500"
+    },
+    {
+      icon: <Users className="h-10 w-10" />,
+      title: "Small Employer Groups",
+      color: "from-yellow-400 to-orange-500"
+    },
+    {
+      icon: <LineChart className="h-10 w-10" />,
+      title: "Healthcare Transparency",
+      color: "from-emerald-400 to-green-600"
     }
   ];
 
@@ -47,6 +57,9 @@ const Specialties = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Industry Specialties</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Our team brings deep expertise across the healthcare ecosystem, delivering tailored reinsurance solutions for today's evolving medical landscape. Every policy is customized and underwritten according to applicable Statutes and Regulations.
+          </p>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+            We focus on providing innovative, cost-effective solutions for small employer groups through consumer-driven technologies that bring transparency to healthcare.
           </p>
         </div>
         

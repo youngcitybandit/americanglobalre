@@ -61,7 +61,8 @@ const About = () => {
               
               <div className="p-8 bg-agr-dark text-white">
                 <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
-                <p>To empower healthcare providers and payers with innovative reinsurance solutions that provide stability and enable growth in an ever-changing medical risk landscape.</p>
+                <p className="mb-4">To provide innovative and cost-effective employee benefits solutions to small groups of employers and their valuable employees.</p>
+                <p>We are innovating by developing new products that utilize proven consumer-driven technologies, delivering transparency in a complex healthcare industry.</p>
               </div>
             </div>
           </div>
