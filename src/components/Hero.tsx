@@ -7,19 +7,28 @@ const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [glowPosition, setGlowPosition] = useState({ x: 50, y: 50 });
   const [activeFeature, setActiveFeature] = useState<number | null>(null);
+  const [animatedText, setAnimatedText] = useState(0);
 
   useEffect(() => {
     setIsLoaded(true);
     
     // Create a moving glow effect
-    const interval = setInterval(() => {
+    const glowInterval = setInterval(() => {
       setGlowPosition({
         x: 30 + Math.random() * 40,
         y: 30 + Math.random() * 40,
       });
     }, 3000);
     
-    return () => clearInterval(interval);
+    // Set up text animation interval
+    const textInterval = setInterval(() => {
+      setAnimatedText(prev => (prev + 1) % 3);
+    }, 4000);
+    
+    return () => {
+      clearInterval(glowInterval);
+      clearInterval(textInterval);
+    };
   }, []);
   
   // Animated background shapes
@@ -28,6 +37,15 @@ const Hero = () => {
     { left: '15%', top: '60%', size: 30, delay: 2, duration: 20 },
     { left: '85%', top: '15%', size: 15, delay: 1, duration: 12 },
     { left: '75%', top: '70%', size: 25, delay: 3, duration: 17 },
+    { left: '50%', top: '30%', size: 12, delay: 2.5, duration: 14 },
+    { left: '35%', top: '85%', size: 18, delay: 1.5, duration: 19 },
+  ];
+
+  // Hero taglines that will animate
+  const taglines = [
+    "Managing Risk for Employer Benefits",
+    "Empowering Employee Wellness",
+    "Transforming Health Insurance"
   ];
 
   return (
@@ -51,6 +69,7 @@ const Hero = () => {
             background: `radial-gradient(circle at center, rgba(25, 239, 215, 0.8), rgba(25, 239, 215, 0))`,
             animationDelay: `${shape.delay}s`,
             animationDuration: `${shape.duration}s`,
+            transform: `scale(${1 + Math.sin(Date.now() / 2000 + i) * 0.2})`,
           }}
         />
       ))}
@@ -69,11 +88,19 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className={`md:w-1/2 mb-12 md:mb-0 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="max-w-2xl">
-              {/* Badge removed */}
-              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 <span className="animate-pulse inline-block text-white">Managing </span>
-                <span className="inline-block bg-gradient-to-r from-agr-accent via-agr-brightBlue to-white bg-clip-text text-transparent animate-pulse">Risk for Employer Benefits</span>
+                <span className="inline-block bg-gradient-to-r from-agr-accent via-agr-brightBlue to-white bg-clip-text text-transparent">
+                  <span className={`inline-block transition-opacity duration-700 ${animatedText === 0 ? 'opacity-100' : 'opacity-0 absolute'}`}>
+                    {taglines[0]}
+                  </span>
+                  <span className={`inline-block transition-opacity duration-700 ${animatedText === 1 ? 'opacity-100' : 'opacity-0 absolute'}`}>
+                    {taglines[1]}
+                  </span>
+                  <span className={`inline-block transition-opacity duration-700 ${animatedText === 2 ? 'opacity-100' : 'opacity-0 absolute'}`}>
+                    {taglines[2]}
+                  </span>
+                </span>
                 <span className="text-white"> in the Digital Age</span>
               </h1>
 
@@ -83,15 +110,15 @@ const Hero = () => {
               
               {/* Features list */}
               <div className={`mb-8 transition-all duration-700 delay-400 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                <div className="flex items-center mb-3">
+                <div className="flex items-center mb-3 hover:translate-x-2 transition-transform duration-300">
                   <CircleCheck className="h-5 w-5 text-agr-accent mr-2" />
                   <span className="text-gray-200">Customized Insurance Solutions</span>
                 </div>
-                <div className="flex items-center mb-3">
+                <div className="flex items-center mb-3 hover:translate-x-2 transition-transform duration-300">
                   <CircleCheck className="h-5 w-5 text-agr-accent mr-2" />
                   <span className="text-gray-200">Innovative Risk Management</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center hover:translate-x-2 transition-transform duration-300">
                   <CircleCheck className="h-5 w-5 text-agr-accent mr-2" />
                   <span className="text-gray-200">World-Class Service</span>
                 </div>
