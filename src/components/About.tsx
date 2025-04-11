@@ -4,6 +4,7 @@ import { CheckCircle, Shield } from 'lucide-react';
 const About = () => {
   const strengths = [
     "Immediate cash payments to employees for qualified events",
+    "Customized policies that adhere to applicable statutes and regulations",
     "Specialized reinsurance expertise",
     "Comprehensive healthcare coverage solutions",
     "Advanced healthcare analytics and risk assessment",
