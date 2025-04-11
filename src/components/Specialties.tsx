@@ -1,5 +1,5 @@
 
-import { Heart, Building, CircleDollarSign, Stethoscope, UserCog, Ambulance, Briefcase, Users } from 'lucide-react';
+import { Heart, Building, CircleDollarSign, Stethoscope, Briefcase, Ambulance, Syringe, Users } from 'lucide-react';
 
 const Specialties = () => {
   const specialties = [
@@ -24,8 +24,8 @@ const Specialties = () => {
       color: "from-amber-500 to-orange-500"
     },
     {
-      icon: <Users className="h-10 w-10" />,
-      title: "Small Employer Groups",
+      icon: <Syringe className="h-10 w-10" />,
+      title: "Anesthesia",
       color: "from-indigo-500 to-violet-500"
     },
     {
