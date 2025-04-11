@@ -36,27 +36,21 @@ const Hero = () => {
               <div className="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-agr-brightBlue to-agr-accent rounded-full opacity-20 absolute top-4 left-4 blur-2xl"></div>
               <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 w-full max-w-md shadow-lg">
                 <div className="flex items-center justify-between mb-6">
-                  <div className="text-white font-bold">Business Coverage</div>
-                  <div className="text-agr-accent">Comprehensive</div>
+                  <div className="text-white font-bold text-xl">American Global</div>
+                  <div className="text-agr-accent font-medium">Premium Solutions</div>
                 </div>
-                <div className="space-y-4">
-                  <div className="bg-white/5 rounded-lg p-4">
-                    <div className="text-sm text-gray-400 mb-1">Risk Protection</div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div className="bg-agr-accent h-2 rounded-full" style={{ width: '95%' }}></div>
-                    </div>
+                <div className="space-y-6">
+                  <div className="bg-white/5 rounded-lg p-5">
+                    <div className="text-white font-medium mb-2">Customized Coverage</div>
+                    <p className="text-gray-300 text-sm">Tailored insurance solutions designed specifically for your business needs and employee requirements.</p>
                   </div>
-                  <div className="bg-white/5 rounded-lg p-4">
-                    <div className="text-sm text-gray-400 mb-1">Business Protection</div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div className="bg-agr-accent h-2 rounded-full" style={{ width: '90%' }}></div>
-                    </div>
+                  <div className="bg-white/5 rounded-lg p-5">
+                    <div className="text-white font-medium mb-2">Risk Mitigation</div>
+                    <p className="text-gray-300 text-sm">Proactive strategies to identify and address potential vulnerabilities before they impact your business.</p>
                   </div>
-                  <div className="bg-white/5 rounded-lg p-4">
-                    <div className="text-sm text-gray-400 mb-1">Telehealth Services</div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div className="bg-agr-accent h-2 rounded-full" style={{ width: '88%' }}></div>
-                    </div>
+                  <div className="bg-white/5 rounded-lg p-5">
+                    <div className="text-white font-medium mb-2">Digital Innovation</div>
+                    <p className="text-gray-300 text-sm">Leveraging technology to streamline benefits administration and improve employee experience.</p>
                   </div>
                 </div>
               </div>
