@@ -19,7 +19,7 @@ const Hero = () => {
                 Managing <span className="gradient-text">Risk for Employer Benefits</span> in the Digital Age
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8">
-                American Global Reinsurance delivers innovative medical stop-loss, indemnity insurance, and specialized healthcare coverage solutions for small businesses. We're not just adapting to the future — we're creating it.
+                American Global delivers advanced, customized insurance solutions that go beyond traditional coverage — because health insurance wasn't built to cover it all. We don't just respond to change — we drive it.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="btn-gradient">
