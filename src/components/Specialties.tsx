@@ -5,7 +5,7 @@ const Specialties = () => {
   const specialties = [
     {
       icon: <Heart className="h-10 w-10" />,
-      title: "Healthcare Providers",
+      title: "Hospital",
       color: "from-red-500 to-pink-500"
     },
     {
