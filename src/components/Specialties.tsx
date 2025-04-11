@@ -33,7 +33,7 @@ const Specialties = () => {
     <section id="specialties" className="section-padding bg-agr-dark">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Benefit Solutions for Your Workforce</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Cash Benefit Solutions for Your Workforce</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto mt-4">
             Enhance your existing benefits program with American Global's employee cash benefits coverage.
           </p>
