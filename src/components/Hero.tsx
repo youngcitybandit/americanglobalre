@@ -2,7 +2,6 @@
 import { ArrowRight, ShieldCheck, TrendingUp, DollarSign, Sparkles, Star, CircleCheck } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import Logo from "./Logo";
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -70,11 +69,6 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className={`md:w-1/2 mb-12 md:mb-0 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="max-w-2xl">
-              {/* Animated Logo */}
-              <div className="mb-10 transform transition-all duration-500 hover:scale-105">
-                <Logo onHero={true} className="w-64" />
-              </div>
-              
               {/* Badge */}
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm mb-5 border border-agr-accent/30 animate-pulse">
                 <Sparkles className="w-4 h-4 mr-2 text-agr-accent" />
