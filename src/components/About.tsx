@@ -1,11 +1,9 @@
-
 import { CheckCircle } from 'lucide-react';
 
 const About = () => {
   const strengths = [
     "Specialized reinsurance expertise",
     "Comprehensive healthcare coverage solutions",
-    "Innovative telehealth reinsurance programs",
     "Rapid claims resolution for healthcare providers",
     "Advanced healthcare analytics and risk assessment",
     "Ambulance and emergency services coverage"
