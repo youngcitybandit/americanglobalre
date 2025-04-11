@@ -38,7 +38,7 @@ const About = () => {
             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
               <div className="p-8 bg-agr-dark text-white">
                 <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
-                <p>To empower healthcare providers and payers with innovative reinsurance solutions that provide stability and enable growth in an ever-changing medical risk landscape.</p>
+                <p>To deliver immediate cash benefits to employees through innovative, customized insurance solutions that go beyond traditional coverage, providing both stability and financial support in an ever-changing healthcare landscape.</p>
               </div>
             </div>
           </div>
