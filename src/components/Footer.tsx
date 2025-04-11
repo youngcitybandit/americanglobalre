@@ -14,9 +14,6 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
-            <p className="text-gray-400 mb-6">
-              Reimagining reinsurance for the digital age with innovative solutions and exceptional service.
-            </p>
             <button 
               onClick={scrollToTop}
               className="bg-white/10 hover:bg-white/20 text-white rounded-full p-3 transition-colors"
