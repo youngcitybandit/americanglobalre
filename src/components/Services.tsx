@@ -2,7 +2,10 @@
 import { 
   HeartPulse, 
   Briefcase,
-  Users
+  Users,
+  HeartHandshake,
+  Shield,
+  Award
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -22,6 +25,21 @@ const Services = () => {
       icon: <Users className="h-12 w-12 text-agr-brightBlue" />,
       title: "Small Employer Groups",
       description: "Specialized coverage solutions for small employer groups, balancing comprehensive protection with affordable premiums."
+    },
+    {
+      icon: <HeartHandshake className="h-12 w-12 text-agr-brightBlue" />,
+      title: "Employee Well-being",
+      description: "Comprehensive wellness programs and support services that enhance employee satisfaction, productivity, and overall well-being."
+    },
+    {
+      icon: <Shield className="h-12 w-12 text-agr-brightBlue" />,
+      title: "Risk Management",
+      description: "Proactive risk assessment and mitigation strategies to protect businesses from unforeseen healthcare expenses and liability."
+    },
+    {
+      icon: <Award className="h-12 w-12 text-agr-brightBlue" />,
+      title: "Cross-Industry Solutions",
+      description: "Versatile coverage options adaptable to various industries, ensuring all businesses can find appropriate protection for their workforce."
     }
   ];
 
@@ -29,9 +47,9 @@ const Services = () => {
     <section id="services" className="section-padding bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Modern Benefits for Today's Businesses</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            AGRe delivers innovative indemnity insurance and specialized healthcare coverage solutions for employers and employees in the evolving healthcare landscape.
+            American Global provides comprehensive solutions that help employers—across industries and business sizes—protect their teams and support employee well-being.
           </p>
         </div>
         
