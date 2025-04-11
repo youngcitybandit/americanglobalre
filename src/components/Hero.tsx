@@ -1,8 +1,15 @@
 
 import { ArrowRight, ShieldCheck, TrendingUp, DollarSign } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-agr-dark pt-32 pb-20 md:pt-40 md:pb-28">
       {/* Static background elements */}
@@ -13,28 +20,28 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="md:w-1/2 mb-12 md:mb-0">
+          <div className={`md:w-1/2 mb-12 md:mb-0 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 Managing <span className="text-agr-accent">Risk for Employer Benefits</span> in the Digital Age
               </h1>
-              <p className="text-lg md:text-xl text-gray-300 mb-8">
+              <p className={`text-lg md:text-xl text-gray-300 mb-8 transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 American Global delivers advanced, customized insurance solutions that go beyond traditional coverage — because health insurance wasn't built to cover it all. We don't just respond to change — we drive it.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-agr-accent text-agr-dark hover:bg-agr-accent/90 transition-all duration-300 transform">
+              <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <Button asChild size="lg" className="bg-agr-accent text-agr-dark hover:bg-agr-accent/90 transition-all duration-300 transform hover:scale-105">
                   <a href="#services">
                     Explore Our Solutions 
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform" />
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </a>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white/10 transition-all duration-300">
+                <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <a href="#contact">Talk to an Expert</a>
                 </Button>
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 flex justify-center md:justify-end">
+          <div className={`md:w-1/2 flex justify-center md:justify-end transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="relative">
               {/* Static glow effect */}
               <div className="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-agr-brightBlue via-[#7ceeff] to-agr-accent rounded-full opacity-20 absolute top-4 left-4 blur-2xl"></div>
@@ -45,21 +52,21 @@ const Hero = () => {
                   <div className="text-white font-bold text-2xl bg-gradient-to-r from-white to-agr-accent bg-clip-text text-transparent">Innovative Solutions</div>
                 </div>
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-5 transition-all duration-300 border border-white/5">
+                  <div className={`bg-white/5 rounded-lg p-5 transition-all duration-300 border border-white/5 hover:bg-white/10 hover:border-agr-accent/30 transform transition-all duration-500 delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                     <div className="flex items-center">
                       <ShieldCheck className="text-agr-accent mr-3 h-6 w-6" />
                       <div className="text-white font-medium mb-2 text-lg">Customized Coverage</div>
                     </div>
                     <p className="text-gray-300 text-sm">Tailored insurance solutions designed specifically for your business needs and employee requirements.</p>
                   </div>
-                  <div className="bg-white/5 rounded-lg p-5 transition-all duration-300 border border-white/5">
+                  <div className={`bg-white/5 rounded-lg p-5 transition-all duration-300 border border-white/5 hover:bg-white/10 hover:border-agr-accent/30 transform transition-all duration-500 delay-400 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                     <div className="flex items-center">
                       <TrendingUp className="text-agr-accent mr-3 h-6 w-6" />
                       <div className="text-white font-medium mb-2 text-lg">Risk Mitigation</div>
                     </div>
                     <p className="text-gray-300 text-sm">Proactive strategies to identify and address potential vulnerabilities before they impact your business.</p>
                   </div>
-                  <div className="bg-white/5 rounded-lg p-5 transition-all duration-300 border border-white/5">
+                  <div className={`bg-white/5 rounded-lg p-5 transition-all duration-300 border border-white/5 hover:bg-white/10 hover:border-agr-accent/30 transform transition-all duration-500 delay-600 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                     <div className="flex items-center">
                       <DollarSign className="text-agr-accent mr-3 h-6 w-6" />
                       <div className="text-white font-medium mb-2 text-lg">Cash Benefits to Employees</div>

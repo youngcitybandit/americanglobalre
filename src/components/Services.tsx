@@ -8,8 +8,12 @@ import {
   Award
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useEffect, useState, useRef, useCallback } from "react";
 
 const Services = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
   const services = [
     {
       icon: <HeartPulse className="h-12 w-12 text-agr-brightBlue" />,
@@ -43,10 +47,30 @@ const Services = () => {
     }
   ];
 
+  const handleScroll = useCallback(() => {
+    if (!sectionRef.current) return;
+    
+    const sectionTop = sectionRef.current.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    
+    if (sectionTop < windowHeight * 0.75) {
+      setIsVisible(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check on mount
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
+
   return (
-    <section id="services" className="section-padding bg-white">
+    <section id="services" className="section-padding bg-white" ref={sectionRef}>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Modern Benefits for Today's Businesses</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             American Global provides comprehensive solutions that help employers—across industries and business sizes—protect their teams and support employee well-being.
@@ -55,7 +79,11 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="card-hover border-0 shadow-lg">
+            <Card 
+              key={index} 
+              className={`card-hover border-0 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
+              style={{ transitionDelay: `${index * 100}ms` }}
+            >
               <CardHeader>
                 <div className="mb-4">{service.icon}</div>
                 <CardTitle className="text-xl">{service.title}</CardTitle>
