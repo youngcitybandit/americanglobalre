@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -40,8 +39,8 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
+            <a href="#benefits" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">Benefits</a>
             <a href="#services" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">Services</a>
             <a href="#specialties" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">Specialties</a>
             <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">About</a>
@@ -56,7 +55,6 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -67,10 +65,16 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden pt-4 pb-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
+              <a 
+                href="#benefits" 
+                className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Benefits
+              </a>
               <a 
                 href="#services" 
                 className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
