@@ -41,8 +41,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-8">
             <a href="#benefits" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">Benefits</a>
-            <a href="#services" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">Services</a>
-            <a href="#specialties" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">Specialties</a>
+            <a href="#coverage" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">Coverage</a>
             <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">About</a>
             <Button 
               variant="outline" 
@@ -76,18 +75,11 @@ const Navbar = () => {
                 Benefits
               </a>
               <a 
-                href="#services" 
+                href="#coverage" 
                 className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
                 onClick={() => setIsOpen(false)}
               >
-                Services
-              </a>
-              <a 
-                href="#specialties" 
-                className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Specialties
+                Coverage
               </a>
               <a 
                 href="#about" 
