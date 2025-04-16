@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Footer = () => {
   return (
     <footer className="bg-agr-dark text-white pt-16 pb-8">
@@ -28,7 +30,7 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 American Global Re Company, Inc. An Allied Insurance Company. All rights reserved.
+              © 2025 American Global Reinsurance Company, Inc. An Allied Insurance Company. All rights reserved.
             </p>
           </div>
         </div>
