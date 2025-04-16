@@ -18,7 +18,7 @@ const About = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">About American Global Re</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Founded on the principles of innovation, expertise, and exceptional service, AGRe specializes in healthcare reinsurance including indemnity insurance and coverage for disease management plans. We combine deep healthcare industry knowledge with cutting-edge technology to deliver solutions that address today's medical challenges and tomorrow's healthcare opportunities.
+              Founded on the principles of innovation, expertise, and exceptional service, AGRe specializes in indemnity insurance coverage for disease management plans. We combine deep healthcare industry knowledge with cutting-edge technology to deliver solutions that address today's medical challenges and tomorrow's healthcare opportunities.
             </p>
             
             <div className="space-y-4 mb-8">
