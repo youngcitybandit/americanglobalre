@@ -1,4 +1,3 @@
-
 import { ArrowRight, ShieldCheck, TrendingUp, DollarSign, Sparkles, Star, CircleCheck } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
@@ -104,7 +103,7 @@ const Hero = () => {
               </h1>
 
               <p className={`text-lg md:text-xl text-gray-300 mb-8 transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                American Global delivers advanced, customized insurance solutions that go beyond traditional coverage — because health insurance wasn't built to cover it all. We don't just respond to change — we drive it.
+                American Global Re delivers advanced, customized insurance solutions that go beyond traditional coverage — because health insurance wasn't built to cover it all. We don't just respond to change — we drive it.
               </p>
               
               {/* Features list */}
