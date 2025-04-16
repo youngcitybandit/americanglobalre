@@ -47,7 +47,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Ready to explore how American Global Reinsurance can strengthen your risk management strategy? Our team is here to help.
+            Ready to explore how American Global Re can strengthen your risk management strategy? Our team is here to help.
           </p>
         </div>
         
@@ -164,3 +164,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
