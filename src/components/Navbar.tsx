@@ -58,7 +58,16 @@ const Navbar = () => {
             >
               Solutions
             </a>
-            <a href="#coverage" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">Coverage</a>
+            <a 
+              href="#" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('specialties');
+              }} 
+              className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block"
+            >
+              Coverage
+            </a>
             <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">About</a>
             <Button 
               variant="outline" 
@@ -95,16 +104,14 @@ const Navbar = () => {
                 Solutions
               </a>
               <a 
-                href="#coverage" 
+                href="#" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('specialties');
+                }}
                 className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
               >
                 Coverage
-              </a>
-              <a 
-                href="#about" 
-                className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
-              >
-                About
               </a>
               <Button 
                 variant="outline" 
