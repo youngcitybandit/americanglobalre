@@ -71,7 +71,7 @@ const Specialties = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-agr-accent to-agr-brightBlue">Cash Benefit Solutions</span> for Your Workforce
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-agr-accent to-agr-brightBlue">Indemnity Insurance Providing Cash Benefit Solutions</span> for Your Workforce
           </h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto mt-4">
             Enhance your existing benefits program with American Global's employee cash benefits coverage.
