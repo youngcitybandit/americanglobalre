@@ -1,4 +1,3 @@
-
 import { ArrowRight, ShieldCheck, TrendingUp, DollarSign, Sparkles, Star, CircleCheck } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
@@ -148,7 +147,7 @@ const Hero = () => {
               <div className="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-tr from-agr-brightBlue via-[#7ceeff] to-agr-accent rounded-full opacity-30 absolute top-4 left-4 blur-2xl animate-pulse"></div>
               <div className="w-60 h-60 md:w-80 md:h-80 bg-gradient-to-br from-[#19efd7] to-[#7ceeff] rounded-full opacity-20 absolute -top-8 -right-8 blur-3xl"></div>
               
-              <div className="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 w-full max-w-md shadow-lg transition-transform duration-500 hover:-rotate-1 hover:scale-105">
+              <div className="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 w-full max-w-xl shadow-lg transition-transform duration-500 hover:-rotate-1 hover:scale-105">
                 <div className="flex items-center justify-between mb-6">
                   <div className="text-white font-bold text-2xl bg-gradient-to-r from-white to-agr-accent bg-clip-text text-transparent">Innovative Solutions</div>
                 </div>
@@ -194,7 +193,7 @@ const Hero = () => {
                       <div className={`text-agr-accent mr-3 transition-all duration-300 ${activeFeature === 2 ? 'scale-125' : ''}`}>
                         <DollarSign className="h-6 w-6" />
                       </div>
-                      <div className="text-white font-medium mb-2 text-lg">Indemnity Insurance Providing Benefits to Employees</div>
+                      <div className="text-white font-medium mb-2 text-lg w-full">Indemnity Insurance Providing Benefits to Employees</div>
                     </div>
                     <p className="text-gray-300 text-sm">Immediate cash payments to employees for qualified events.</p>
                     {activeFeature === 2 && (
