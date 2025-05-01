@@ -193,7 +193,7 @@ const Hero = () => {
                       <div className={`text-agr-accent mr-3 transition-all duration-300 ${activeFeature === 2 ? 'scale-125' : ''}`}>
                         <DollarSign className="h-6 w-6" />
                       </div>
-                      <div className="text-white font-medium mb-2 text-lg w-full">Indemnity Insurance Providing Benefits to Employees</div>
+                      <div className="text-white font-medium mb-2 text-lg w-full">Indemnity Insurance Providing Employee Benefits</div>
                     </div>
                     <p className="text-gray-300 text-sm">Immediate cash payments to employees for qualified events.</p>
                     {activeFeature === 2 && (
