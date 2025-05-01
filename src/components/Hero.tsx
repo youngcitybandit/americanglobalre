@@ -43,7 +43,7 @@ const Hero = () => {
   // Hero taglines that will animate
   const taglines = [
     "Managing Risk for Employer Benefits",
-    "Empowering Employee Wellness",
+    "Empowering Employee Benefits",
     "Transforming Health Insurance"
   ];
 
