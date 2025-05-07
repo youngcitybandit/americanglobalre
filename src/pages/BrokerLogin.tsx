@@ -14,7 +14,7 @@ const BrokerLogin = () => {
             <div className="text-center mb-10">
               <h1 className="text-3xl md:text-5xl font-bold text-agr-dark mb-6">Smarter Coverage for Your Clients</h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8">
-                Deliver tailored insurance solutions that protect their business, support employees with cash benefits, and mitigate risk.
+                Offer your clients tailored insurance solutions that safeguard their business, provide employee cash benefits, and proactively reduce risk.
               </p>
               <Button asChild size="lg" className="bg-agr-brightBlue hover:bg-agr-blue transition-transform duration-300 hover:scale-105">
                 <a href="/broker-login">Login</a>
