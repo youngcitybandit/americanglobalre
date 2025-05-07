@@ -136,12 +136,7 @@ const Navbar = () => {
             </NavigationMenu>
             
             <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">About</a>
-            <Button 
-              variant="outline" 
-              className="border-agr-brightBlue text-agr-brightBlue hover:bg-agr-brightBlue hover:text-white transition-colors duration-300"
-            >
-              Log In
-            </Button>
+            
             <Button asChild className="bg-agr-brightBlue hover:bg-agr-blue transition-transform duration-300 hover:scale-105">
               <a href="#contact">Contact Us</a>
             </Button>
@@ -235,12 +230,7 @@ const Navbar = () => {
               <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2">
                 About
               </a>
-              <Button 
-                variant="outline" 
-                className="border-agr-brightBlue text-agr-brightBlue hover:bg-agr-brightBlue hover:text-white transition-colors duration-300 text-left justify-start"
-              >
-                Log In
-              </Button>
+              
               <Button 
                 asChild 
                 className="bg-agr-brightBlue hover:bg-agr-blue w-full transition-transform duration-300 hover:scale-105"
