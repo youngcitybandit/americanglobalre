@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -22,6 +23,7 @@ const Footer = () => {
               <li><Link to={getLinkPath('services')} className="text-gray-400 hover:text-white transition-colors">Coverage</Link></li>
               <li><Link to={getLinkPath('about')} className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to={getLinkPath('contact')} className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Careers</Link></li>
             </ul>
           </div>
           
