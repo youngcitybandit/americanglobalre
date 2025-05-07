@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Newspaper, Book } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -158,9 +157,8 @@ const Navbar = () => {
                         <NavigationMenuLink asChild>
                           <Link 
                             to="/news"
-                            className="flex items-center select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
-                            <Newspaper className="mr-2 h-4 w-4" />
                             <div className={dropdownItemClass}>News</div>
                           </Link>
                         </NavigationMenuLink>
@@ -169,9 +167,8 @@ const Navbar = () => {
                         <NavigationMenuLink asChild>
                           <Link 
                             to="/blog"
-                            className="flex items-center select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
-                            <Book className="mr-2 h-4 w-4" />
                             <div className={dropdownItemClass}>Blog</div>
                           </Link>
                         </NavigationMenuLink>
@@ -305,14 +302,12 @@ const Navbar = () => {
                     to="/news"
                     className={`${mobileDropdownItemClass} flex items-center`}
                   >
-                    <Newspaper className="mr-2 h-4 w-4" />
                     News
                   </Link>
                   <Link 
                     to="/blog"
                     className={`${mobileDropdownItemClass} flex items-center`}
                   >
-                    <Book className="mr-2 h-4 w-4" />
                     Blog
                   </Link>
                 </div>
