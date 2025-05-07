@@ -113,14 +113,14 @@ const Navbar = () => {
             </NavigationMenu>
             
             <a 
-              href="#solutions" 
+              href="#services" 
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection('solutions');
+                scrollToSection('services');
               }}
               className={navLinkClass + " inline-block"}
             >
-              Solutions
+              Coverage
             </a>
             
             <a 
@@ -131,7 +131,7 @@ const Navbar = () => {
               }}
               className={navLinkClass + " inline-block"}
             >
-              Coverage
+              Solutions
             </a>
             
             <a 
@@ -219,14 +219,14 @@ const Navbar = () => {
               </div>
               
               <a 
-                href="#solutions" 
+                href="#services" 
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection('solutions');
+                  scrollToSection('services');
                 }}
                 className={mobileNavLinkClass}
               >
-                Solutions
+                Coverage
               </a>
               
               <a 
@@ -237,7 +237,7 @@ const Navbar = () => {
                 }}
                 className={mobileNavLinkClass}
               >
-                Coverage
+                Solutions
               </a>
               
               <a 
