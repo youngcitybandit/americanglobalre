@@ -105,6 +105,33 @@ const Navbar = () => {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 bg-transparent">Brokers</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[200px] gap-3 p-4">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a 
+                            href="/overview"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Overview</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a 
+                            href="#faqs" 
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">FAQs</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
             
@@ -175,6 +202,36 @@ const Navbar = () => {
                   </a>
                 </div>
               </div>
+              
+              <div className="relative">
+                <button 
+                  onClick={() => {
+                    const dropdown = document.getElementById('brokersDropdown');
+                    if (dropdown) {
+                      dropdown.classList.toggle('hidden');
+                    }
+                  }}
+                  className="flex items-center justify-between w-full text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+                >
+                  <span>Brokers</span>
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+                <div id="brokersDropdown" className="hidden mt-2 pl-4 space-y-2">
+                  <a 
+                    href="/overview"
+                    className="block text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+                  >
+                    Overview
+                  </a>
+                  <a 
+                    href="#faqs"
+                    className="block text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+                  >
+                    FAQs
+                  </a>
+                </div>
+              </div>
+              
               <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2">
                 About
               </a>
