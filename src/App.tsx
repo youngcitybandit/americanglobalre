@@ -9,6 +9,7 @@ import BrokerLogin from "./pages/BrokerLogin";
 import EmployerLogin from "./pages/EmployerLogin";
 import NotFound from "./pages/NotFound";
 import News from "./pages/News";
+import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +24,7 @@ const App = () => (
           <Route path="/broker-login" element={<BrokerLogin />} />
           <Route path="/employer-login" element={<EmployerLogin />} />
           <Route path="/news" element={<News />} />
-          <Route path="/blog" element={<NotFound />} />
+          <Route path="/blog" element={<Blog />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
