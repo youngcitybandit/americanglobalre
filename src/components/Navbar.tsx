@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, Newspaper, Book } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Logo from './Logo';
 import { Link, useLocation } from 'react-router-dom';
@@ -134,16 +134,53 @@ const Navbar = () => {
               Coverage
             </a>
             
-            <a 
-              href="#about" 
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('about');
-              }} 
-              className={navLinkClass + " inline-block"}
-            >
-              About
-            </a>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={`${navLinkClass} bg-transparent`}>About</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[200px] gap-3 p-4">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a 
+                            href="#about" 
+                            onClick={(e) => {
+                              e.preventDefault();
+                              scrollToSection('about');
+                            }}
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className={dropdownItemClass}>About Us</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link 
+                            to="/news"
+                            className="flex items-center select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <Newspaper className="mr-2 h-4 w-4" />
+                            <div className={dropdownItemClass}>News</div>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <Link 
+                            to="/blog"
+                            className="flex items-center select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <Book className="mr-2 h-4 w-4" />
+                            <div className={dropdownItemClass}>Blog</div>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
             
             <Button asChild className="bg-agr-brightBlue hover:bg-agr-blue transition-transform duration-300 hover:scale-105">
               <a 
@@ -240,16 +277,46 @@ const Navbar = () => {
                 Coverage
               </a>
               
-              <a 
-                href="#about" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection('about');
-                }}
-                className={mobileNavLinkClass}
-              >
-                About
-              </a>
+              <div className="relative">
+                <button 
+                  onClick={() => {
+                    const dropdown = document.getElementById('aboutDropdown');
+                    if (dropdown) {
+                      dropdown.classList.toggle('hidden');
+                    }
+                  }}
+                  className="flex items-center justify-between w-full text-base font-medium text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+                >
+                  <span>About</span>
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+                <div id="aboutDropdown" className="hidden mt-2 pl-4 space-y-2">
+                  <a 
+                    href="#about" 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection('about');
+                    }}
+                    className={mobileDropdownItemClass}
+                  >
+                    About Us
+                  </a>
+                  <Link 
+                    to="/news"
+                    className={`${mobileDropdownItemClass} flex items-center`}
+                  >
+                    <Newspaper className="mr-2 h-4 w-4" />
+                    News
+                  </Link>
+                  <Link 
+                    to="/blog"
+                    className={`${mobileDropdownItemClass} flex items-center`}
+                  >
+                    <Book className="mr-2 h-4 w-4" />
+                    Blog
+                  </Link>
+                </div>
+              </div>
               
               <Button 
                 asChild 
