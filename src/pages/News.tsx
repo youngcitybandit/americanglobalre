@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Newspaper } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 const NewsPage = () => {
   // Sample news articles
@@ -39,7 +40,7 @@ const NewsPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navigation bar is included via layout */}
+      <Navbar />
       
       <div className="pt-24 pb-16 bg-white shadow-sm">
         <div className="container mx-auto px-4 md:px-6">
