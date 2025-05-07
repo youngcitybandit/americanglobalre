@@ -11,30 +11,30 @@ const NewsPage = () => {
   const newsArticles = [
     {
       id: 1,
-      title: "AGR Insurance Expands Coverage Options",
+      title: "AGRe Expands Coverage Options",
       date: "May 1, 2025",
-      summary: "AGR Insurance announces new coverage options for small businesses, offering more flexible plans at competitive rates.",
+      summary: "AGRe announces new coverage options for small businesses, offering more flexible plans at competitive rates.",
       link: "#"
     },
     {
       id: 2,
       title: "New Partnership Announcement",
       date: "April 22, 2025",
-      summary: "AGR Insurance partners with leading healthcare providers to enhance benefits packages for all employer plans.",
+      summary: "AGRe partners with leading healthcare providers to enhance benefits packages for all employer plans.",
       link: "#"
     },
     {
       id: 3,
       title: "Digital Transformation Initiative",
       date: "April 15, 2025",
-      summary: "AGR launches new digital platform to streamline claims processing and improve customer experience.",
+      summary: "AGRe launches new digital platform to streamline claims processing and improve customer experience.",
       link: "#"
     },
     {
       id: 4,
       title: "Industry Recognition for Customer Service",
       date: "March 28, 2025",
-      summary: "AGR Insurance receives top industry recognition for exceptional customer service and client satisfaction.",
+      summary: "AGRe receives top industry recognition for exceptional customer service and client satisfaction.",
       link: "#"
     }
   ];
@@ -47,7 +47,7 @@ const NewsPage = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex items-center mb-4">
             <Newspaper className="h-6 w-6 text-agr-brightBlue mr-2" />
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">AGR Insurance News</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">AGRe News</h1>
           </div>
           <p className="text-xl text-gray-600 max-w-3xl">
             Stay up-to-date with the latest announcements, industry insights, and company updates.

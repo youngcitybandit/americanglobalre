@@ -51,7 +51,7 @@ const BlogPage = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex items-center mb-4">
             <Book className="h-6 w-6 text-agr-brightBlue mr-2" />
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">AGR Insurance Blog</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">AGRe Blog</h1>
           </div>
           <p className="text-xl text-gray-600 max-w-3xl">
             Expert insights, industry trends, and practical advice for employers and brokers.
