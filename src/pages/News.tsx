@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Link } from "react-router-dom";
 import { Newspaper } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const NewsPage = () => {
   // Sample news articles
@@ -80,6 +81,8 @@ const NewsPage = () => {
           </Button>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };

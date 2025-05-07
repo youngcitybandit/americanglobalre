@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Link } from "react-router-dom";
 import { Book } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const BlogPage = () => {
   // Sample blog posts
@@ -86,6 +87,8 @@ const BlogPage = () => {
           </Button>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };

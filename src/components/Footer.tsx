@@ -1,8 +1,16 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+  
+  // If we're on the home page, use anchor links
+  // Otherwise, redirect to home page with the appropriate hash
+  const getLinkPath = (sectionId: string) => {
+    return isHomePage ? `#${sectionId}` : `/#${sectionId}`;
+  };
+
   return (
     <footer className="bg-agr-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
@@ -10,10 +18,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-6 text-left">Quick Links</h3>
             <ul className="space-y-3 text-left">
-              <li><Link to="/#solutions" className="text-gray-400 hover:text-white transition-colors">Solutions</Link></li>
-              <li><Link to="/#services" className="text-gray-400 hover:text-white transition-colors">Coverage</Link></li>
-              <li><Link to="/#about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/#contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to={getLinkPath('solutions')} className="text-gray-400 hover:text-white transition-colors">Solutions</Link></li>
+              <li><Link to={getLinkPath('services')} className="text-gray-400 hover:text-white transition-colors">Coverage</Link></li>
+              <li><Link to={getLinkPath('about')} className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to={getLinkPath('contact')} className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
           
