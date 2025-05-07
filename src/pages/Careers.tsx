@@ -43,7 +43,7 @@ const CareersPage = () => {
         <div className="mt-12 text-center max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold mb-4">Why Work With Us?</h2>
           <p className="text-gray-700 mb-6">
-            At AGRe, we're committed to fostering an inclusive workplace where innovative thinking is rewarded and professional growth is encouraged. We offer competitive benefits, flexible work arrangements, and the opportunity to make a real impact in the reinsurance industry.
+            At AGRe, we're committed to fostering an inclusive workplace where innovative thinking is rewarded and professional growth is encouraged. We offer competitive benefits, flexible work arrangements, and the opportunity to make a real impact in the insurance industry.
           </p>
           <p className="text-gray-700">
             Keep an eye on this page for future opportunities or send us your resume and we'll keep you in mind when new positions open up.
