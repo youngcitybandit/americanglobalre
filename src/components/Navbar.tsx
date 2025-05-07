@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Logo from './Logo';
+import { Link, useLocation } from 'react-router-dom';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,22 +12,30 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+    // If we're on the home page, scroll to the section
+    if (location.pathname === '/') {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        setIsOpen(false);
+        return;
+      }
     }
+    
+    // If we're not on the home page, navigate to the home page with the section as a hash
+    window.location.href = `/#${sectionId}`;
     setIsOpen(false);
   };
 
@@ -58,9 +67,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <Logo isScrolled={isScrolled} />
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -72,12 +81,12 @@ const Navbar = () => {
                     <ul className="grid w-[200px] gap-3 p-4">
                       <li>
                         <NavigationMenuLink asChild>
-                          <a 
-                            href="/employer-login"
+                          <Link 
+                            to="/employer-login"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
                             <div className={dropdownItemClass}>Login</div>
-                          </a>
+                          </Link>
                         </NavigationMenuLink>
                       </li>
                     </ul>
@@ -89,12 +98,12 @@ const Navbar = () => {
                     <ul className="grid w-[200px] gap-3 p-4">
                       <li>
                         <NavigationMenuLink asChild>
-                          <a 
-                            href="/broker-login"
+                          <Link 
+                            to="/broker-login"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
                             <div className={dropdownItemClass}>Login</div>
-                          </a>
+                          </Link>
                         </NavigationMenuLink>
                       </li>
                     </ul>
@@ -104,7 +113,7 @@ const Navbar = () => {
             </NavigationMenu>
             
             <a 
-              href="#" 
+              href="#solutions" 
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection('solutions');
@@ -115,7 +124,7 @@ const Navbar = () => {
             </a>
             
             <a 
-              href="#" 
+              href="#services" 
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection('services');
@@ -125,10 +134,28 @@ const Navbar = () => {
               Coverage
             </a>
             
-            <a href="#about" className={navLinkClass + " inline-block"}>About</a>
+            <a 
+              href="#about" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('about');
+              }} 
+              className={navLinkClass + " inline-block"}
+            >
+              About
+            </a>
             
             <Button asChild className="bg-agr-brightBlue hover:bg-agr-blue transition-transform duration-300 hover:scale-105">
-              <a href="#contact" className="text-base font-medium">Contact Us</a>
+              <a 
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('contact');
+                }}
+                className="text-base font-medium"
+              >
+                Contact Us
+              </a>
             </Button>
           </div>
 
@@ -159,12 +186,12 @@ const Navbar = () => {
                   <ChevronDown className="h-4 w-4" />
                 </button>
                 <div id="employersDropdown" className="hidden mt-2 pl-4 space-y-2">
-                  <a 
-                    href="/employer-login"
+                  <Link 
+                    to="/employer-login"
                     className={mobileDropdownItemClass}
                   >
                     Login
-                  </a>
+                  </Link>
                 </div>
               </div>
               
@@ -182,17 +209,17 @@ const Navbar = () => {
                   <ChevronDown className="h-4 w-4" />
                 </button>
                 <div id="brokersDropdown" className="hidden mt-2 pl-4 space-y-2">
-                  <a 
-                    href="/broker-login"
+                  <Link 
+                    to="/broker-login"
                     className={mobileDropdownItemClass}
                   >
                     Login
-                  </a>
+                  </Link>
                 </div>
               </div>
               
               <a 
-                href="#" 
+                href="#solutions" 
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection('solutions');
@@ -203,7 +230,7 @@ const Navbar = () => {
               </a>
               
               <a 
-                href="#" 
+                href="#services" 
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection('services');
@@ -213,7 +240,14 @@ const Navbar = () => {
                 Coverage
               </a>
               
-              <a href="#about" className={mobileNavLinkClass}>
+              <a 
+                href="#about" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('about');
+                }}
+                className={mobileNavLinkClass}
+              >
                 About
               </a>
               
@@ -221,7 +255,16 @@ const Navbar = () => {
                 asChild 
                 className="bg-agr-brightBlue hover:bg-agr-blue w-full transition-transform duration-300 hover:scale-105"
               >
-                <a href="#contact" className="text-base font-medium">Contact Us</a>
+                <a 
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection('contact');
+                  }}
+                  className="text-base font-medium"
+                >
+                  Contact Us
+                </a>
               </Button>
             </div>
           </div>
