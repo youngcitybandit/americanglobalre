@@ -9,8 +9,8 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-6 text-left">Quick Links</h3>
             <ul className="space-y-3 text-left">
-              <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
               <li><a href="#solutions" className="text-gray-400 hover:text-white transition-colors">Solutions</a></li>
+              <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Coverage</a></li>
               <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
             </ul>
