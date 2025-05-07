@@ -74,34 +74,6 @@ const Navbar = () => {
                           </a>
                         </NavigationMenuLink>
                       </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <a 
-                            href="#" 
-                            onClick={(e) => {
-                              e.preventDefault();
-                              scrollToSection('services');
-                            }} 
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">Solutions</div>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <a 
-                            href="#" 
-                            onClick={(e) => {
-                              e.preventDefault();
-                              scrollToSection('solutions');
-                            }} 
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">Coverage</div>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -134,6 +106,28 @@ const Navbar = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
+            
+            <a 
+              href="#" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('solutions');
+              }}
+              className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block"
+            >
+              Solutions
+            </a>
+            
+            <a 
+              href="#" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('services');
+              }}
+              className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block"
+            >
+              Coverage
+            </a>
             
             <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">About</a>
             
@@ -175,26 +169,6 @@ const Navbar = () => {
                   >
                     Login
                   </a>
-                  <a 
-                    href="#" 
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('services');
-                    }}
-                    className="block text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
-                  >
-                    Solutions
-                  </a>
-                  <a 
-                    href="#" 
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('solutions');
-                    }}
-                    className="block text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
-                  >
-                    Coverage
-                  </a>
                 </div>
               </div>
               
@@ -226,6 +200,28 @@ const Navbar = () => {
                   </a>
                 </div>
               </div>
+              
+              <a 
+                href="#" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('solutions');
+                }}
+                className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+              >
+                Solutions
+              </a>
+              
+              <a 
+                href="#" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('services');
+                }}
+                className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+              >
+                Coverage
+              </a>
               
               <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2">
                 About
