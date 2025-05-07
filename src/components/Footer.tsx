@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,21 +10,21 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-6 text-left">Quick Links</h3>
             <ul className="space-y-3 text-left">
-              <li><a href="#solutions" className="text-gray-400 hover:text-white transition-colors">Solutions</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Coverage</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><Link to="/#solutions" className="text-gray-400 hover:text-white transition-colors">Solutions</Link></li>
+              <li><Link to="/#services" className="text-gray-400 hover:text-white transition-colors">Coverage</Link></li>
+              <li><Link to="/#about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/#contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-semibold text-lg mb-6 text-left">Legal</h3>
             <ul className="space-y-3 text-left">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Regulatory Information</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Disclaimer</a></li>
+              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
+              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</Link></li>
+              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Regulatory Information</Link></li>
+              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Disclaimer</Link></li>
             </ul>
           </div>
         </div>
