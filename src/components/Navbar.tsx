@@ -113,10 +113,10 @@ const Navbar = () => {
             </NavigationMenu>
             
             <a 
-              href="#services" 
+              href="#solutions" 
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection('services');
+                scrollToSection('solutions');
               }}
               className={navLinkClass + " inline-block"}
             >
@@ -219,10 +219,10 @@ const Navbar = () => {
               </div>
               
               <a 
-                href="#services" 
+                href="#solutions" 
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection('services');
+                  scrollToSection('solutions');
                 }}
                 className={mobileNavLinkClass}
               >
