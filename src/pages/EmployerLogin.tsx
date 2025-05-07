@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
-const Login = () => {
+const EmployerLogin = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -17,7 +17,7 @@ const Login = () => {
                 Tailored insurance solutions that protect your business, support your team with cash benefits, and proactively manage risk.
               </p>
               <Button asChild size="lg" className="bg-agr-brightBlue hover:bg-agr-blue transition-transform duration-300 hover:scale-105">
-                <a href="/login">Login</a>
+                <a href="/employer-login">Login</a>
               </Button>
             </div>
           </div>
@@ -28,4 +28,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default EmployerLogin;
