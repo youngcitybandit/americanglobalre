@@ -19,10 +19,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-6 text-left">Quick Links</h3>
             <ul className="space-y-3 text-left">
-              <li><Link to={getLinkPath('solutions')} className="text-gray-400 hover:text-white transition-colors">Solutions</Link></li>
-              <li><Link to={getLinkPath('services')} className="text-gray-400 hover:text-white transition-colors">Coverage</Link></li>
-              <li><Link to={getLinkPath('about')} className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to={getLinkPath('contact')} className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><a href={getLinkPath('solutions')} className="text-gray-400 hover:text-white transition-colors">Solutions</a></li>
+              <li><a href={getLinkPath('services')} className="text-gray-400 hover:text-white transition-colors">Coverage</a></li>
+              <li><a href={getLinkPath('about')} className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+              <li><a href={getLinkPath('contact')} className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
               <li><Link to="/careers" className="text-gray-400 hover:text-white transition-colors">Careers</Link></li>
             </ul>
           </div>
