@@ -113,17 +113,6 @@ const Navbar = () => {
             </NavigationMenu>
             
             <a 
-              href="#solutions" 
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('solutions');
-              }}
-              className={navLinkClass + " inline-block"}
-            >
-              Coverage
-            </a>
-            
-            <a 
               href="#services" 
               onClick={(e) => {
                 e.preventDefault();
@@ -132,6 +121,17 @@ const Navbar = () => {
               className={navLinkClass + " inline-block"}
             >
               Solutions
+            </a>
+            
+            <a 
+              href="#solutions" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('solutions');
+              }}
+              className={navLinkClass + " inline-block"}
+            >
+              Coverage
             </a>
             
             <a 
@@ -219,17 +219,6 @@ const Navbar = () => {
               </div>
               
               <a 
-                href="#solutions" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection('solutions');
-                }}
-                className={mobileNavLinkClass}
-              >
-                Coverage
-              </a>
-              
-              <a 
                 href="#services" 
                 onClick={(e) => {
                   e.preventDefault();
@@ -238,6 +227,17 @@ const Navbar = () => {
                 className={mobileNavLinkClass}
               >
                 Solutions
+              </a>
+              
+              <a 
+                href="#solutions" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('solutions');
+                }}
+                className={mobileNavLinkClass}
+              >
+                Coverage
               </a>
               
               <a 
