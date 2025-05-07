@@ -23,18 +23,18 @@ const Footer = () => {
               <li><Link to={getLinkPath('services')} className="text-gray-400 hover:text-white transition-colors">Coverage</Link></li>
               <li><Link to={getLinkPath('about')} className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to={getLinkPath('contact')} className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Careers</Link></li>
+              <li><Link to="/careers" className="text-gray-400 hover:text-white transition-colors">Careers</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-semibold text-lg mb-6 text-left">Legal</h3>
             <ul className="space-y-3 text-left">
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Regulatory Information</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Disclaimer</Link></li>
+              <li><Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
+              <li><Link to="/cookie-policy" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</Link></li>
+              <li><Link to="/regulatory-info" className="text-gray-400 hover:text-white transition-colors">Regulatory Information</Link></li>
+              <li><Link to="/disclaimer" className="text-gray-400 hover:text-white transition-colors">Disclaimer</Link></li>
             </ul>
           </div>
         </div>
