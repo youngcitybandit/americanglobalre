@@ -2,7 +2,6 @@
 import React from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 
 const Overview = () => {
   return (
@@ -15,13 +14,6 @@ const Overview = () => {
             <p className="text-lg md:text-xl text-gray-600 mb-12">
               Tailored insurance solutions that protect your business, support your team with cash benefits, and proactively manage risk.
             </p>
-            
-            <Button 
-              size="lg"
-              className="bg-agr-brightBlue text-white hover:bg-agr-blue transition-transform duration-300 hover:scale-105"
-            >
-              Login
-            </Button>
           </div>
         </div>
       </div>
