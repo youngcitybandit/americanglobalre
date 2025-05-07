@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Newspaper } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Logo from './Logo';
 import { Link, useLocation } from 'react-router-dom';
@@ -103,38 +103,6 @@ const Navbar = () => {
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
                             <div className={dropdownItemClass}>Login</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className={`${navLinkClass} bg-transparent`}>
-                    <span className="flex items-center">
-                      <Newspaper className="mr-1 h-4 w-4" />
-                      News & Blog
-                    </span>
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[200px] gap-3 p-4">
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link 
-                            to="/news"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className={dropdownItemClass}>News</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link 
-                            to="/blog"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className={dropdownItemClass}>Blog</div>
                           </Link>
                         </NavigationMenuLink>
                       </li>
@@ -246,38 +214,6 @@ const Navbar = () => {
                     className={mobileDropdownItemClass}
                   >
                     Login
-                  </Link>
-                </div>
-              </div>
-              
-              <div className="relative">
-                <button 
-                  onClick={() => {
-                    const dropdown = document.getElementById('newsBlogDropdown');
-                    if (dropdown) {
-                      dropdown.classList.toggle('hidden');
-                    }
-                  }}
-                  className="flex items-center justify-between w-full text-base font-medium text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
-                >
-                  <span className="flex items-center">
-                    <Newspaper className="mr-1 h-4 w-4" />
-                    News & Blog
-                  </span>
-                  <ChevronDown className="h-4 w-4" />
-                </button>
-                <div id="newsBlogDropdown" className="hidden mt-2 pl-4 space-y-2">
-                  <Link 
-                    to="/news"
-                    className={mobileDropdownItemClass}
-                  >
-                    News
-                  </Link>
-                  <Link 
-                    to="/blog"
-                    className={mobileDropdownItemClass}
-                  >
-                    Blog
                   </Link>
                 </div>
               </div>
