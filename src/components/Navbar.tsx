@@ -91,16 +91,6 @@ const Navbar = () => {
                           </a>
                         </NavigationMenuLink>
                       </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <a 
-                            href="#faqs" 
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">FAQs</div>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -191,12 +181,6 @@ const Navbar = () => {
                     className="block text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
                   >
                     Login
-                  </a>
-                  <a 
-                    href="#faqs"
-                    className="block text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
-                  >
-                    FAQs
                   </a>
                 </div>
               </div>
