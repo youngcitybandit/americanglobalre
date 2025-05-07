@@ -19,10 +19,10 @@ const BlogPage = () => {
     },
     {
       id: 2,
-      title: "The Future of Insurance Technology",
+      title: "The Future of Healthcare Technology",
       date: "April 28, 2025",
       author: "Michael Johnson",
-      summary: "Exploring how AI, blockchain, and digital platforms are transforming the insurance industry and improving customer experiences.",
+      summary: "Exploring how AI, blockchain, and digital platforms are transforming the healthcare industry and improving customer experiences.",
       link: "#"
     },
     {
@@ -35,10 +35,10 @@ const BlogPage = () => {
     },
     {
       id: 4,
-      title: "Navigating Insurance Compliance in 2025",
+      title: "Navigating Healthcare Compliance in 2025",
       date: "April 10, 2025",
       author: "Robert Chen",
-      summary: "A breakdown of the latest regulatory changes affecting insurance providers and what businesses need to know to stay compliant.",
+      summary: "A breakdown of the latest regulatory changes affecting healthcare providers and what businesses need to know to stay compliant.",
       link: "#"
     }
   ];
