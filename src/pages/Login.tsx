@@ -17,7 +17,7 @@ const Login = () => {
                 Tailored insurance solutions that protect your business, support your team with cash benefits, and proactively manage risk.
               </p>
               <Button asChild size="lg" className="bg-agr-brightBlue hover:bg-agr-blue transition-transform duration-300 hover:scale-105">
-                <a href="/login-portal">Login</a>
+                <a href="/login">Login</a>
               </Button>
             </div>
           </div>

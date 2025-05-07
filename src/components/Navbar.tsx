@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -66,7 +67,7 @@ const Navbar = () => {
                       <li>
                         <NavigationMenuLink asChild>
                           <a 
-                            href="/login-portal"
+                            href="/login"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
                             <div className="text-sm font-medium leading-none">Login</div>
@@ -163,7 +164,7 @@ const Navbar = () => {
                 </button>
                 <div id="employersDropdown" className="hidden mt-2 pl-4 space-y-2">
                   <a 
-                    href="/login-portal"
+                    href="/login"
                     className="block text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
                   >
                     Login
