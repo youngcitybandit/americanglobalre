@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -62,7 +63,7 @@ const Navbar = () => {
               href="#" 
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection('specialties');
+                scrollToSection('solutions');
               }} 
               className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block"
             >
@@ -107,7 +108,7 @@ const Navbar = () => {
                 href="#" 
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection('specialties');
+                  scrollToSection('solutions');
                 }}
                 className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
               >
