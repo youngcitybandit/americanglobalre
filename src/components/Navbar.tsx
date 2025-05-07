@@ -1,8 +1,17 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import Logo from './Logo';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,26 +58,46 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a 
-              href="#" 
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('services');
-              }} 
-              className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block"
-            >
-              Solutions
-            </a>
-            <a 
-              href="#" 
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('solutions');
-              }} 
-              className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block"
-            >
-              Coverage
-            </a>
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 bg-transparent">Employers</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[200px] gap-3 p-4">
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a 
+                            href="#" 
+                            onClick={(e) => {
+                              e.preventDefault();
+                              scrollToSection('services');
+                            }} 
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Solutions</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink asChild>
+                          <a 
+                            href="#" 
+                            onClick={(e) => {
+                              e.preventDefault();
+                              scrollToSection('solutions');
+                            }} 
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">Coverage</div>
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+            
             <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-colors duration-300 hover:scale-105 inline-block">About</a>
             <Button 
               variant="outline" 
@@ -94,25 +123,44 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden pt-4 pb-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
-              <a 
-                href="#" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection('services');
-                }}
-                className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
-              >
-                Solutions
-              </a>
-              <a 
-                href="#" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection('solutions');
-                }}
-                className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
-              >
-                Coverage
+              <div className="relative">
+                <button 
+                  onClick={() => {
+                    const dropdown = document.getElementById('employersDropdown');
+                    if (dropdown) {
+                      dropdown.classList.toggle('hidden');
+                    }
+                  }}
+                  className="flex items-center justify-between w-full text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+                >
+                  <span>Employers</span>
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+                <div id="employersDropdown" className="hidden mt-2 pl-4 space-y-2">
+                  <a 
+                    href="#" 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection('services');
+                    }}
+                    className="block text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+                  >
+                    Solutions
+                  </a>
+                  <a 
+                    href="#" 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection('solutions');
+                    }}
+                    className="block text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2"
+                  >
+                    Coverage
+                  </a>
+                </div>
+              </div>
+              <a href="#about" className="text-gray-700 hover:text-agr-brightBlue transition-all duration-300 hover:pl-2">
+                About
               </a>
               <Button 
                 variant="outline" 
