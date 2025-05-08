@@ -134,7 +134,7 @@ const Hero = () => {
                 </Button>
                 <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white/10 transition-all duration-300 hover:scale-105 group">
                   <a href="#contact">
-                    Talk to an Expert
+                    Find a Broker
                     <Star className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-all duration-300" />
                   </a>
                 </Button>
